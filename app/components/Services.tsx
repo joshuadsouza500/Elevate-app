@@ -3,9 +3,9 @@ import React from 'react'
 import {Motionh1 , MotionDiv } from "./MotionDiv";
 function Services() {
   return (
- <div id="Services"  className=' h-dvh rounded-b-3xl'>
-     <div className='pt-10 sm:flex flex-col ml-10 sm:ml-20 lg:ml-32'>
-          <Motionh1 className='font-Poppins text-background opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-8 pb-16 '
+ <div id="Services"  className=' h-dvh'>
+     <div className='pt-1 sm:flex flex-col ml-10 sm:ml-20 lg:ml-32'>
+          <Motionh1 className='font-Poppins text-background text-opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-6 pb-16 '
             initial={{opacity:0 , x: -10}}
             whileInView = {{opacity:1,  x: 0}}
             viewport={{once:true}}

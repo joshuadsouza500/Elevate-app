@@ -31,7 +31,7 @@ import Lenis from '@studio-freight/lenis'
 // Define color transitions based on scroll position
     const bgColor = useTransform(
       scrollY,
-      [0, 400,600,800,1500,1800], // Adjust these values as needed
+      [0, 500,600,800,1700,1800], // Adjust these values as needed
       ["#FAFAF5", "#100E0E","#100E0E", "#100E0E",  "#100E0E","#FAFAF5"] // Corresponding background colors
     );
  
@@ -40,7 +40,6 @@ import Lenis from '@studio-freight/lenis'
     <motion.div   style=
     {{
           width: "100%",
-          
           backgroundColor: bgColor,
         }}
       

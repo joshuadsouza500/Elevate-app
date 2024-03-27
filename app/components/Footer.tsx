@@ -3,9 +3,8 @@ import React from 'react'
 function Footer () {
   return (
     <div>
-        <footer className="flex footer p-8 bg-stone-950 text-background opacity-90
-        gap-4 sm:gap-20 md:gap-40 lg:gap-64">
-  <nav className='ml-10'>
+        <footer className="flex footer p-4 bg-stone-950 text-background text-xs  md:text-base opacity-90 gap-4  justify-between md:px-40">
+  <nav className='ml-3 md:ml-20'>
     <h6 className="footer-title">Navigation</h6> 
     <a className="link link-hover">Home</a>
     <a className="link link-hover">About</a>

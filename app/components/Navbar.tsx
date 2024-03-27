@@ -1,18 +1,18 @@
 
 import React from "react";
 import Link from "next/link";
-import { MotionDiv } from "./MotionDiv";
+import { MotionNav } from "./MotionDiv";
 
 function NavBar()  {
   return (
-    <div >
-      <MotionDiv className="navbar bg-background fixed border-b border-background2 z-20 "
+    <div > 
+      <MotionNav className="navbar bg-background fixed border-b border-background2 z-20 w-dvw"
       initial ={{opacity:0}}
       animate = {{opacity:1}}
       transition={{delay: 0.2}}
      
       >
-        <div className="absolute right-5">
+        <div className="absolute right-6">
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -39,10 +39,10 @@ function NavBar()  {
               className="dropdown-content z-[1] menu p-2 shadow bg-background rounded-box w-52 "
             >
               <li>
-                <Link href="#Home" scroll={true} >Home</Link>
+                <Link href="#Home"  >Home</Link>
               </li>
               <li>
-                <Link href="#About" scroll={true}   >About</Link>
+                <Link href="#About"    >About</Link>
               </li>
               <li>
                 <Link href="#Services"> Services</Link>
@@ -80,10 +80,10 @@ function NavBar()  {
         <h4 className="font-Poppins font-medium pt-2 pl-1">Elevate</h4> 
         </div>
         <div className="hidden sm:block flex-none absolute right-2 md:right-10">
-          <ul className="flex flex-row justify-around gap-4 pr-10 mr-4 font-Poppins text-base text-background2 ">
+          <ul className="flex flex-row justify-around gap-4 pr-8 mr-2 font-Poppins text-base text-background2 ">
             <li>
               <Link
-                href="#Home" scroll={true} 
+                href="#Home"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth"
               >
                 Home
@@ -91,7 +91,7 @@ function NavBar()  {
             </li>
             <li>
               <Link
-                href="#About" scroll={true} 
+                href="#About"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth"
               >
                 About
@@ -99,7 +99,7 @@ function NavBar()  {
             </li>
             <li>
               <Link 
-                href="#Services" scroll={true} 
+                href="#Services"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth"
               >
                 Services
@@ -107,7 +107,7 @@ function NavBar()  {
             </li>
             <li>
               <Link
-                href="#Work" scroll={true} 
+                href="#Work"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth"
               >
                 Works
@@ -115,7 +115,7 @@ function NavBar()  {
             </li>
             <li>
               <Link
-                href="#Reviews" scroll={true} 
+                href="#Reviews"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth"
               >
                 Reviews
@@ -123,7 +123,7 @@ function NavBar()  {
             </li>
             <li>
               <Link
-                href="/contact" scroll={true} 
+                href="/contact"  
                 className="hover:border-b hover:border-black hover:border-solid scroll-smooth" 
               >
                 Contact
@@ -132,7 +132,7 @@ function NavBar()  {
           </ul>
         </div>
      
-    </MotionDiv>
+    </MotionNav>
     </div>
   );
 };
