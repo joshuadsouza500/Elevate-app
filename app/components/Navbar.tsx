@@ -6,7 +6,7 @@ import { MotionDiv } from "./MotionDiv";
 function NavBar()  {
   return (
     <div >
-      <MotionDiv className="w-full navbar bg-background fixed border-b border-background2 z-20 "
+      <MotionDiv className="navbar bg-background fixed border-b border-background2 z-20 "
       initial ={{opacity:0}}
       animate = {{opacity:1}}
       transition={{delay: 0.2}}

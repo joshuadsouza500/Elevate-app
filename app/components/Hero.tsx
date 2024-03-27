@@ -6,7 +6,7 @@ import { MotionDiv, Motionh1 ,MotionP } from "./MotionDiv";
 function HeroSection() {
   return (
     <>
-      <div id="Home" className="flex justify-start h-lvh w-full pl-10 pt-36 sm:pl-20 lg:pl-32 sm:pt-32 ">
+      <div id="Home" className="flex justify-start h-lvh pl-10 pt-36 sm:pl-20 lg:pl-32 sm:pt-32 ">
         <div className="w-11/12 md:w-4/5 lg:w-2/3">
           <Motionh1 className="text-stone-950 sm:leading-tight lg:leading-none opacity-90 font-Poppins font-bold capitalize text-4xl  sm:text-5xl md:text-5xl lg:text-7xl  "
           initial={{opacity:0 , y: -10}}

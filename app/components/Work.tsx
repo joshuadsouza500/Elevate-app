@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {Motionh1 , MotionDiv } from "./MotionDiv";
 function Work() {
   return (
-    <div id="Work"  className=' h-dvh w-full'>
+    <div id="Work"  className=' h-dvh '>
          <div className='lg:mb-5'>
              <Motionh1 className='font-Poppins text-stone-950 opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-16 md:pt-24 lg:pt-32 lg:pb-24 pb-16  ml-10 md:ml-20 lg:ml-32'
              initial = {{opacity :0 , y: 100}}
