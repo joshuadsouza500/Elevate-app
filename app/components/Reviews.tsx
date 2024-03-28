@@ -43,7 +43,7 @@ import {Motionh1 , MotionDiv } from "./MotionDiv";
                   </div>
             </MotionDiv>
 
-            <MotionDiv className='bg-white shadow-xl w-[80%] rounded-xl sticky top-[0%] ' >
+            <MotionDiv className='bg-white shadow-xl w-[80%] rounded-xl sticky top-20 md:top-0 ' >
                 <p className='hidden md:block opacity-80 font-semibold text-sm w-10/12 lg:w-9/12 my-4 p-5 md:ml-6'>
                 I had the pleasure of working with Elevate on a recent marketing campaign and I was thoroughly impressed with their level of creativity, professionalism, and attention to detail.The team at Elevate went above and beyond to ensure our campaign was a success, resulting in increased brand awareness and customer engagement. I highly recommend Elevate to any business looking to take their marketing efforts to the next level.
                 </p>

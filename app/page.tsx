@@ -13,6 +13,9 @@ import { useEffect, useRef, useState } from "react";
 import Lenis from '@studio-freight/lenis'
 
 
+
+
+
   export default function Home() {
 
        useEffect( () => {
@@ -37,6 +40,7 @@ import Lenis from '@studio-freight/lenis'
  
     return (
     <>
+    
     <motion.div   style=
     {{
           width: "100%",

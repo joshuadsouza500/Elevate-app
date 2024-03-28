@@ -5,10 +5,15 @@ import Navbar from "./components/Navbar";
 
 import Footer from "./components/Footer";
 
+
 export const metadata: Metadata = {
   title: "Elevate-app",
   description: "Digital Marketing agency",
+  keywords: ['SocialMedia','Marketing', 'ads', 'WebDesign', 'WebDevelopement', 'GCC', 'SEO', 'Brand ']
 };
+
+
+
 
 export default function RootLayout({
   children,
@@ -17,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
+       
       <body>      
       <Navbar />
 

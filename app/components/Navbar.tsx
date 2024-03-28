@@ -13,7 +13,8 @@ function NavBar()  {
      
       >
         <div className="absolute right-6">
-          <div className="dropdown dropdown-end">
+          <div className="dropdown dropdown-end
+          ">
             <div
               tabIndex={0}
               role="button"
