@@ -7,9 +7,14 @@ import Footer from "./components/Footer";
 
 
 export const metadata: Metadata = {
+  other:{
+    name :"google-site-verification",
+    content :"m3YkuK-Y4S-R_8lvq_jMpg2khDcoUQJKPe0TmD0r9ms"
+  },
   title: "Elevate-app",
   description: "Digital Marketing agency",
-  keywords: ['SocialMedia','Marketing', 'ads', 'WebDesign', 'WebDevelopement', 'GCC', 'SEO', 'Brand ']
+  keywords: ['SocialMedia','Marketing', 'ads', 'WebDesign', 'WebDevelopement', 'GCC', 'SEO', 'Brand '],
+ 
 };
 
 
