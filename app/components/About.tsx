@@ -11,7 +11,7 @@ import {Motionh1 ,MotionP, MotionB, MotionDiv } from "./MotionDiv";
       
     " >
   
-        <div className="flex justify-center items-start  flex-col sm:justify-start ml-10 sm:ml-20 lg:ml-32 gap-1 ">
+        <div className="flex justify-center items-start text-opacity-90  flex-col sm:justify-start ml-10 sm:ml-20 lg:ml-32 gap-1 ">
           <Motionh1 className="text-5xl md:text-6xl lg:text-7xl text-background text-opacity-90 font-bold font-Poppins pt-4 md:pt-10 mb-8"  initial={{opacity:0 , x: -80}}
           whileInView = {{opacity:1,  x: 0}}
           viewport={{once:true}}
