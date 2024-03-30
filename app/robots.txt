@@ -1,0 +1,5 @@
+
+
+User-agent: *
+Disallow:
+Sitemap:https://elevate-app-bh.vercel.app/sitemap.xml
