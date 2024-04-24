@@ -13,7 +13,10 @@ export const metadata: Metadata = {
   title: "Elevate-app",
   description: "Digital Marketing agency",
   keywords: ['SocialMedia','Marketing', 'ads', 'WebDesign', 'WebDevelopement', 'GCC', 'SEO', 'Brand '],
- 
+  openGraph:{
+    title: 'Elevate-app',
+    description: "Digital Marketing agency"
+  }
 };
 
 
