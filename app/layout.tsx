@@ -5,22 +5,27 @@ import Navbar from "./components/Navbar";
 
 import Footer from "./components/Footer";
 
-
 export const metadata: Metadata = {
-  verification:{
-    google :"m3YkuK-Y4S-R_8lvq_jMpg2khDcoUQJKPe0TmD0r9ms",
+  verification: {
+    google: "m3YkuK-Y4S-R_8lvq_jMpg2khDcoUQJKPe0TmD0r9ms",
   },
   title: "Elevate-app",
-  description: "Digital Marketing agency",
-  keywords: ['SocialMedia','Marketing', 'ads', 'WebDesign', 'WebDevelopement', 'GCC', 'SEO', 'Brand '],
-  openGraph:{
-    title: 'Elevate-app',
-    description: "Digital Marketing agency"
-  }
+  description: "Marketing agency",
+  keywords: [
+    "SocialMedia",
+    "Marketing",
+    "ads",
+    "WebDesign",
+    "WebDevelopement",
+    "GCC",
+    "SEO",
+    "Brand ",
+  ],
+  openGraph: {
+    title: "Elevate-app",
+    description: "Marketing agency",
+  },
 };
-
-
-
 
 export default function RootLayout({
   children,
@@ -28,15 +33,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-       
-      <body>      
-      <Navbar />
+    <html
+      lang="en"
+      className="
+font-Poppins"
+    >
+      <body className="bg-background">
+        {children}
 
-      {children}
-     
-      <Footer />
-
+        <Footer />
       </body>
     </html>
   );
