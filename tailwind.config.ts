@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         background: "#FAFAF5",
         background2: "#100E0E",
+        Purple: "#7163BA",
       },
       lineHeight: {
         "extra-loose": "3rem",

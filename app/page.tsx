@@ -31,6 +31,9 @@ export default function Home() {
       <motion.div className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
         <NavBar />
         <Hero />
+        <section className="w-full h-28 bg-gray-300 my-8">
+          <p className="text-center ">Logo Slider</p>
+        </section>
         <About />
         <Services />
         <Work />
