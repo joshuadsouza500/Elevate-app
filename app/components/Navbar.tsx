@@ -4,14 +4,14 @@ import { MotionNav } from "./MotionDiv";
 
 function NavBar() {
   return (
-    <div className=" max-w-5xl mx-auto  xl:max-w-7xl 2xl:max-w-[1440px] w-[80%] bg-transparent backdrop-blur-md absolute  top-0  z-20">
+    <div className="w-[300px] md:w-[600px] xl:w-[1100px] max-w-5xl mx-auto  xl:max-w-7xl 2xl:max-w-[1440px] absolute bg-transparent  top-0  z-20">
       <MotionNav
         className="navbar   border-b border-background2/10 z-20 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        <div className="absolute right-6 sm:hidden">
+        <div className="absolute right-6 md:hidden">
           <div
             className="dropdown dropdown-end 
           "
@@ -19,7 +19,7 @@ function NavBar() {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle sm:hidden"
+              className="btn btn-ghost btn-circle md:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function NavBar() {
           </h4>
         </div>
 
-        <nav className="w-full hidden sm:flex justify-between items-center ml-4">
+        <nav className="w-full hidden md:flex justify-between items-center ml-10 pt-1">
           <ul className="flex flex-row justify-around gap-4 pr-8 mr-2  text-lg font-semibold text-background2 ">
             <li>
               <Link
@@ -108,9 +108,11 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-          <div>
-            <button>Contact</button>
-          </div>
+          <button className="w-24 md:w-32 rounded-2xl bg-purple-400 h-9 text-background hover:bg-purple-700 ">
+            <Link href="/contact" className=" ">
+              Contact
+            </Link>
+          </button>
         </nav>
       </MotionNav>
     </div>

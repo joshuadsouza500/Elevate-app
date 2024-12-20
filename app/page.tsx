@@ -1,16 +1,17 @@
 "use client";
 
 import RootLayout from "./layout";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Work from "./components/Work";
-import Reviews from "./components/Reviews";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+
+import Work from "./components/sections/Work";
+import Reviews from "./components/sections/Reviews";
 import ContactMe from "./components/ContactMe";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import NavBar from "./components/Navbar";
+import Services from "./components/sections/Services";
 
 //npm install to reinstall node modules//
 
@@ -29,7 +30,6 @@ export default function Home() {
   return (
     <>
       <motion.div className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
-        <NavBar />
         <Hero />
         <section className="w-full h-28 bg-gray-300 my-8">
           <p className="text-center ">Logo Slider</p>
@@ -37,8 +37,6 @@ export default function Home() {
         <About />
         <Services />
         <Work />
-        <Reviews />
-        <ContactMe />
       </motion.div>
     </>
   );
