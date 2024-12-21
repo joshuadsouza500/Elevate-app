@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 import Footer from "./components/Footer";
+import Footer1 from "./components/ui/Footer1";
 
 export const metadata: Metadata = {
   verification: {

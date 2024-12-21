@@ -20,14 +20,14 @@ export default function WorksCard({
 }: WorksCardProps) {
   return (
     <Link href={`/case-studies/${slug}`}>
-      <div className="aspect-square md:aspect-[4/3]  rounded-2xl  flex flex-col justify-center  pb-2 bg-white font-medium hover:shadow-md">
-        <figure className=" w-full rounded-t-2xl  relative group overflow-hidden ">
+      <div className="aspect-square sm:aspect-[4/3]  rounded-2xl  flex flex-col justify-center  sm:pb-2 bg-white font-medium hover:shadow-md">
+        <figure className=" w-full rounded-t-2xl  relative group overflow-hidden  ">
           <Image
             src={image}
             height={400}
             width={400}
             alt={` project thumbnail`}
-            className="h-full  w-full object-cover rounded-t-2xl group-hover:scale-[1.025]  transition-transform duration-200 ease-in-out"
+            className="h-auto   w-full object-cover rounded-t-2xl group-hover:scale-[1.025]  transition-transform duration-200 ease-in-out"
           />
           <div className="absolute bottom-4  left-2  gap-2 z-10  text-sm group-hover:flex hidden transition-all duration-200 ease-in-out ">
             {Array.isArray(services) &&
@@ -48,7 +48,7 @@ export default function WorksCard({
             <span className="size-1 bg-black rounded-full"></span>{" "}
             <p className="font-mono">{company}</p>
           </div>
-          <h5 className="text-xl md:text-2xl  ">{title}</h5>
+          <h5 className="text-xl md:text-2xl  capitalize">{title}</h5>
         </div>
       </div>
     </Link>

@@ -1,16 +1,17 @@
 import Link from "next/link";
 import { Mail, ArrowUpRight, ListEndIcon, GitBranch } from "lucide-react";
-const Footer = () => {
+
+export default function Footer1() {
   return (
     <footer className=" text-white  pb-2 md:pb-4 px-2 md:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl bg-zinc-950 pt-8   rounded-2xl">
-        <div className="grid gap-6 md:gap-12">
+        <div className="grid gap-6 ">
           {/* Main CTA Section */}
           <div
             className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background w-full rounded-2xl flex flex-col place-items-center"
             id="#CTA"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-black to-zinc-600 bg-clip-text text-transparent">
               Ready to elevate <br /> your brand?
             </h2>
             <p className="max-md:text-sm text-zinc-600 text-lg">
@@ -23,94 +24,17 @@ const Footer = () => {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-zinc-800 w-full max-w-6xl mx-auto" />
 
           {/* Footer Content Grid */}
-          <div className="grid px-2 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto  place-items-stretch  w-full">
-            {/* Brand Column */}
-            <div className="space-y-2   h-full ">
-              <h6 className="text-2xl font-bold tracking-tight">
-                Elevate<span className="text-primary">.</span>
-              </h6>
-              <p className="text-sm text-zinc-400 max-w-xs">
-                Creating digital solutions that drive innovation and deliver
-                exceptional results.
-              </p>
-            </div>
 
-            <div className="w-full flex justify-between md:justify-end md:gap-x-16 lg:gap-x-24 items-center S">
-              {/* Quick Links */}
-              <div>
-                <h3 className="text-sm font-semibold mb-4 text-zinc-300">
-                  Links
-                </h3>
-                <ul className="space-y-2 md:space-y-3  text-sm text-zinc-400">
-                  <li>
-                    <Link
-                      href="#"
-                      className="hover:text-white transition-colors"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="hover:text-white transition-colors"
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="hover:text-white transition-colors"
-                    >
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="#"
-                      className="hover:text-white transition-colors"
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Contact Info */}
-              <div className="h-full">
-                <h3 className="text-sm font-semibold mb-4 text-zinc-300">
-                  Contact
-                </h3>
-                <ul className="space-y-2 md:space-y-3 text-sm text-zinc-400">
-                  <li>
-                    <Link
-                      href="mailto:hello@Elevate.dev"
-                      className="hover:text-white transition-colors"
-                    >
-                      hello@Elevate.dev
-                    </Link>
-                  </li>
-                  <li>+973 3456-778</li>
-                  <li>
-                    123 Innovation Street
-                    <br />
-                    Tech City, TC 12345
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          {/* Brand Column */}
+          <div className=" "></div>
 
           {/* Bottom Bar */}
-          <div className="flex flex-row justify-between items-center pl-2 md:pl-4 pt-3 md:pt-5 pb-2  gap-4 relative ">
-            <div className="text-xs  md:text-sm text-zinc-400">
-              © {new Date().getFullYear()} Elevate. All rights reserved.
-            </div>
-
+          <div className="flex flex-row justify-center items-center pl-2 md:pl-4 pt-3 md:pt-5  gap-4 relative ">
+            <h6 className="leading-none text-[144px] text-center font-medium tracking-tight">
+              Elevate<span className="text-primary">.</span>
+            </h6>
             {/* Social Links */}
 
             <div
@@ -163,6 +87,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

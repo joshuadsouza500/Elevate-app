@@ -76,8 +76,8 @@ function NavBar() {
               d="m19.867 1.739 16.775 30.533-32.484.58 15.71-31.113Z"
             />
           </svg>
-          <h4 className=" font-semibold text-xl md:text-3xl pt-2 pl-1">
-            ELEVATE
+          <h4 className=" text-background2 text-xl md:text-3xl pt-2 pl-1  font-bold tracking-tight">
+            Elevate<span className="text-primary">.</span>
           </h4>
         </div>
 
