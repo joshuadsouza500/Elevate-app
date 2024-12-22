@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 
 import Footer from "./components/Footer";
 import Footer1 from "./components/ui/Footer1";
+import Footer2 from "./components/Footer";
 
 export const metadata: Metadata = {
   verification: {
@@ -42,7 +43,7 @@ font-Poppins"
       <body className="bg-background">
         {children}
 
-        <Footer />
+        <Footer2 />
       </body>
     </html>
   );
