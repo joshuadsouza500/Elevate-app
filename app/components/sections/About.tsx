@@ -3,7 +3,7 @@ function AboutMe() {
     <>
       <div
         id="About"
-        className="h-auto  py-10  md:py-16 xl:py-20 flex items-center  flex-col gap-3 md:gap-y-5
+        className="h-auto  py-16 xl:py-20 flex items-center  flex-col gap-3 md:gap-y-5
       
     "
       >

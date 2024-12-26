@@ -2,47 +2,65 @@ import React from "react";
 import { MotionDiv, Motionh1 } from "../MotionDiv";
 import { title } from "process";
 import Service2 from "../ui/Service2";
+import ServiceSmall from "../ui/ServiceSmall";
 
 const service = [
   {
     id: 0,
-    title: "Web  Branding",
+    title: "Logo & Branding",
     content:
-      "From custom web applications to e-commerce solutions, we create digital experiences that drive results.",
-    img: "/Review1.webp",
+      "Shape your brand's identity with  logos and cohesive branding that communicates your values and sets you apart.",
+    img: "/Happylfe/happyl.jpeg",
   },
   {
     id: 1,
-    title: "Media  Developement",
+    title: " App Developement",
     content:
-      "From custom web applications to e-commerce solutions, we create digital experiences that drive results.",
-    img: "/Home/home2.jpeg",
+      "From custom web applications to ecommerce solutions, we create digital experiences that drive results.",
+    img: "/Litlem/lit1.jpeg",
   },
   {
     id: 2,
     title: "SEO",
     content:
-      "Implementing proven SEO strategies to boost your websites ranking on search engines and drive organic traffic.",
-    img: "/Litlem/lit1.jpeg",
+      "Implementing proven SEO strategies to elevate your brand's online presence and drive organic traffic to your site.",
+    img: "/Home/home2.jpeg",
   },
   {
     id: 3,
-    title: "Production",
+    title: "Media Production",
     content:
-      "From custom web applications to e-commerce solutions, we create digital experiences that drive results.",
-    img: "/Macy/macy.jpeg",
+      "From concept development to post-production, we deliver high-quality visual content that enhances your brand narrative.",
+    img: "/Macy/macy2.jpeg ",
   },
 ];
 
 function Services() {
   return (
-    <div id="Services" className=" h-dvh">
-      <div className="pt-1 sm:flex flex-col ml-10 sm:ml-20 lg:ml-32">
-        <h1 className="font-Poppins text-background text-opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-6 pb-16 ">
-          What We Do
-        </h1>
-
-        <ul className="w-full  text-4xl text-black h-full  ">
+    <div id="Services" className=" h-auto ">
+      <div className="pt-1 flex flex-col items-center ">
+        <div className="pb-16 md:pb-24  text-center gap-y-1">
+          <h6 className="capitalize text-Purple max-md:text-sm ">
+            {" "}
+            &#65290; What we do
+          </h6>
+          <p className="mx-auto font-medium w-[80%] max-md:text-xs  md:w-[70%]">
+            {"Here's"} how we can help your brand shine and connect with your
+            audience.
+          </p>
+        </div>
+        <ul className="md:hidden w-full h-full  cursor-pointer ">
+          {service.map((service) => (
+            <ServiceSmall
+              key={service.id}
+              id={service.id}
+              title={service.title}
+              Img={service.img}
+              content={service.content}
+            />
+          ))}
+        </ul>
+        <ul className="hidden md:block w-[95%]  text-4xl text-black h-full  cursor-pointer ">
           {service.map((service) => (
             <Service2
               key={service.id}

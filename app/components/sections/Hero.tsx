@@ -10,8 +10,8 @@ function Hero() {
         id="Home"
         className="flex flex-col md:flex-row justify-between items-start h-auto    "
       >
-        <div className="w-11/12 md:w-1/2  h-full flex flex-col max-md:text-center max-md:items-center justify-center pt-44 pb-6">
-          <h1 className="max-md:w-4/5 text-stone-950 md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  2xl:text-6xl  ">
+        <div className="w-full md:w-1/2  h-full flex flex-col max-md:text-center max-md:items-center justify-center pt-44 pb-6">
+          <h1 className=" text-stone-950 md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  2xl:text-6xl  ">
             Elevate your brand,
             <br className="hidden 2xl:block" />{" "}
             <span className="text-indigo-600 ">captivate</span> your audience!

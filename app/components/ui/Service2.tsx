@@ -1,13 +1,24 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { MotionP } from "../MotionDiv";
 
-const Service2 = ({ title, Img, id, content }) => {
+interface ServiceProps {
+  title: string;
+  Img: string;
+  id: number;
+  content: string;
+}
+
+const Service2 = ({ title, Img, id, content }: ServiceProps) => {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
+  //We useRef here so that we can - the ClientX and ClientY values of the mouse event relative to the top-left corner of the div. (Defualt is relative to viewport).
+  //If y is 200 {mousediv element} would show outside the box but when it is either -somenumber or - by height of the div it would show inside the div.
   // Update mouse position
+
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect(); //getBoundingClientRect provides details about the size of an element and its position relative to the viewport.
@@ -30,22 +41,27 @@ const Service2 = ({ title, Img, id, content }) => {
 
   return (
     <div
-      ref={ref} // Assign the ref to the element
+      ref={ref}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className=" text-black  relative w-full flex justify-between py-14 font-semibold border-b-2 bg-blue-300"
+      className=" text-black border-b-black/20 border-b-2 mx-auto  relative w-full flex justify-between py-10 h-auto  group"
     >
-      <div className="flex gap-x-4 items-center pl-2 w-full">
-        <p className="text-sm">{id + 1}</p>
-        <h2 className="text-3xl">{title}</h2>
-      </div>
+      <motion.div
+        className="flex gap-x-8 items-center pl-1 w-full z-10 py-2"
+        initial={{ opacity: 0.3 }}
+        animate={{ opacity: isHovering ? 1 : 0.3 }}
+        transition={{ duration: 0.3 }}
+      >
+        <p className="text-sm">{id + 1} .</p>
+        <h2 className="text-4xl xl:text-4xl font-medium">{title}</h2>
+      </motion.div>
 
       {isHovering && (
         <motion.img
-          src={Img} // replace with your image path
+          src={Img}
           alt="Follower"
-          className="size-44 rounded-lg z-20"
+          className="size-40 xl:size-52 rounded-lg z-10 shadow-sm  object-cover object-center"
           style={{
             position: "absolute",
             top: mouseY,
@@ -61,12 +77,27 @@ const Service2 = ({ title, Img, id, content }) => {
       )}
 
       {isHovering && (
-        <div className="w-full place-items-end">
-          <p className="text-sm w-[70%] text-black/50  font-medium">
+        <div className="w-full place-items-end z-10 ">
+          <MotionP
+            className="text-sm w-[65%] text-black/70 font-medium leading-tight tracking-wide"
+            initial={{ opacity: 0.3 }}
+            animate={{ opacity: isHovering ? 1 : 0.3 }}
+            transition={{ duration: 0.3 }}
+          >
             {content}
-          </p>
+          </MotionP>
         </div>
       )}
+      <motion.div
+        className="absolute -bottom-[2px] left-0 h-[2px] bg-black"
+        initial={{ width: 0, opacity: 0 }}
+        viewport={{ once: true }}
+        animate={{
+          width: isHovering ? "100%" : "40%",
+          opacity: isHovering ? 0.4 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      />
     </div>
   );
 };

@@ -13,7 +13,7 @@ import Lenis from "@studio-freight/lenis";
 import NavBar from "./components/Navbar";
 import Services from "./components/sections/Services";
 import Service2 from "./components/ui/Service2";
-import Service3 from "./components/ui/Service3";
+import Service3 from "./components/ui/ServiceSmall";
 
 //npm install to reinstall node modules//
 
@@ -32,12 +32,12 @@ export default function Home() {
   return (
     <>
       <motion.div className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
-        {/**
+        {/***/}
         <Hero />
         <section className="w-full h-28 bg-gray-300 my-8">
           <p className="text-center ">Logo Slider</p>
         </section>
-        <About /> */}
+        <About />
         <Services />
         <Work />
       </motion.div>

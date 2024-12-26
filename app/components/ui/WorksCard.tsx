@@ -20,21 +20,21 @@ export default function WorksCard({
 }: WorksCardProps) {
   return (
     <Link href={`/case-studies/${slug}`}>
-      <div className="aspect-square sm:aspect-[4/3]  rounded-2xl  flex flex-col justify-center  sm:pb-2 bg-white font-medium hover:shadow-md">
-        <figure className=" w-full rounded-t-2xl  relative group overflow-hidden  ">
+      <div className="aspect-square sm:aspect-[4/3]  rounded-xl  flex flex-col justify-center  sm:pb-2  font-medium hover:shadow-sm">
+        <figure className=" w-full rounded-xl  relative group overflow-hidden  ">
           <Image
             src={image}
             height={400}
             width={400}
             alt={` project thumbnail`}
-            className="h-auto   w-full object-cover rounded-t-2xl group-hover:scale-[1.025]  transition-transform duration-200 ease-in-out"
+            className="h-auto   w-full object-cover rounded-xl group-hover:scale-[1.025]  transition-transform duration-200 ease-in-out"
           />
           <div className="absolute bottom-4  left-2  gap-2 z-10  text-sm group-hover:flex hidden transition-all duration-200 ease-in-out ">
             {Array.isArray(services) &&
               services.map((service) => (
                 <span
                   key={service}
-                  className=" w-auto px-3 py-1 capitalize bg-gray-300 rounded-2xl"
+                  className=" w-auto px-3 py-1 capitalize bg-gray-300 rounded-xl"
                 >
                   {service}
                 </span>
