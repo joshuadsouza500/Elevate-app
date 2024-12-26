@@ -1,6 +1,6 @@
 import React, { MouseEvent, useEffect, useRef, useState } from "react";
 import { MotionDiv } from "../MotionDiv";
-import { useSpring } from "framer-motion";
+import { useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const Service3 = () => {
   const [mouseX, setMouseX] = useState(0);
@@ -13,9 +13,16 @@ const Service3 = () => {
   const handleMouseMouse = (e: MouseEvent<HTMLDivElement>) => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect(); //getBoundingClientRect provides details about the size of an element and its position relative to the viewport.
-      setMouseX(e.clientX - rect.left);
-      setMouseY(e.clientY - rect.top);
-      //Use spring and usetransform to create stiffness and also create boundary using rect.width and rect.height so that the mousediv element does not go outside the box.
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      // Boundary checks Math.max(0, ...): This function then takes the larger of 0 and the result from the first step. This ensures that if x is less than 0, boundedX will be set to 0.
+      const boundedX = Math.max(0, Math.min(x, rect.width));
+      const boundedY = Math.max(0, Math.min(y, rect.height));
+
+      setMouseX(boundedX);
+      setMouseY(boundedY);
+      //Use spring and usetransform to create stiffness and damping effect
     }
   };
 
@@ -35,6 +42,12 @@ const Service3 = () => {
           className="size-14 rounded-xl bg-Purple"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.1,
+            type: "spring",
+            stiffness: 100,
+            damping: 200,
+          }}
           exit={{ opacity: 0 }}
           style={{
             top: mouseY,
