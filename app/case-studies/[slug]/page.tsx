@@ -75,7 +75,7 @@ const CaseStudy = async ({
     <section className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
       <NavBar />
       <div className="max-w-6xl  mx-auto px-4 pt-24 pb-10">
-        <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold text-gray-800">
+        <h1 className="text-3xl font-mono md:text-4xl xl:text-5xl font-semibold text-gray-800">
           {work.company}
         </h1>
 
@@ -95,7 +95,7 @@ const CaseStudy = async ({
         </div>
 
         <div className="mt-5 md:mt-10 grid md:grid-cols-2 gap-8">
-          <div className="max-md:flex items-center justify-between mx-2 ">
+          <div className="max-md:flex items-center justify-between mx-1 ">
             <div className="">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Deliverables:
@@ -122,7 +122,7 @@ const CaseStudy = async ({
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               Project Overview:
             </h2>
-            <p className="text-gray-600 pl-1 text-pretty tracking-wide">
+            <p className="text-gray-600 pl-1 text-pretty  tracking-wide">
               {work.desc}
             </p>
           </div>

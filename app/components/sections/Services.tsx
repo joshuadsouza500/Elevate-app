@@ -42,9 +42,9 @@ function Services() {
         <div className="pb-16 md:pb-24  text-center gap-y-1">
           <h6 className="capitalize text-Purple max-md:text-sm ">
             {" "}
-            &#65290; What we do
+            * What we do
           </h6>
-          <p className="mx-auto font-medium w-[80%] max-md:text-xs  md:w-[70%]">
+          <p className="mx-auto text-background2/80 text-xs font-medium w-[80%]  md:w-[70%]">
             {"Here's"} how we can help your brand shine and connect with your
             audience.
           </p>
@@ -56,7 +56,6 @@ function Services() {
               id={service.id}
               title={service.title}
               Img={service.img}
-              content={service.content}
             />
           ))}
         </ul>

@@ -20,7 +20,7 @@ export default function WorksCard({
 }: WorksCardProps) {
   return (
     <Link href={`/case-studies/${slug}`}>
-      <div className="aspect-square sm:aspect-[4/3]  rounded-xl  flex flex-col justify-center  sm:pb-2  font-medium hover:shadow-sm">
+      <div className="aspect-square sm:aspect-[4/3]  rounded-xl  flex flex-col justify-center  sm:pb-2  font-medium md:hover:shadow-sm">
         <figure className=" w-full rounded-xl  relative group overflow-hidden  ">
           <Image
             src={image}
