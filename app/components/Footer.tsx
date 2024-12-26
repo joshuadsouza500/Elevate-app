@@ -167,7 +167,7 @@ const Footer = () => {
 const Footer2 = () => {
   return (
     <footer className=" text-white  pb-2 md:pb-4 px-1 md:px-6 lg:px-8 ">
-      <div className="container mx-auto max-w-7xl bg-zinc-950 pt-8   rounded-t-2xl rounded-br-2xl">
+      <div className="container mx-auto max-w-7xl bg-zinc-950 pt-4   rounded-t-2xl rounded-br-2xl">
         <div className="grid gap-6 md:gap-12">
           {/* Main CTA Section */}
           <div
@@ -187,10 +187,10 @@ const Footer2 = () => {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-zinc-800 w-full max-w-6xl mx-auto px-1" />
+          <div className="border-t border-zinc-800 w-full max-w-6xl mx-auto px-2" />
 
           {/* Footer Content Grid */}
-          <div className="grid px-2 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto  place-items-stretch  w-full">
+          <div className="grid px-4 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto  place-items-stretch  w-full">
             {/* Brand Column */}
             <div className="space-y-2   h-full ">
               <h6 className="text-2xl font-bold tracking-tight">
@@ -202,7 +202,7 @@ const Footer2 = () => {
               </p>
             </div>
 
-            <div className="w-full flex justify-between md:justify-end md:gap-x-16 lg:gap-x-24 items-center S">
+            <div className="w-full flex justify-between md:justify-end md:gap-x-16 lg:gap-x-24 items-center pb-4">
               {/* Quick Links */}
               <div>
                 <h3 className="text-sm font-semibold mb-4 text-zinc-300">

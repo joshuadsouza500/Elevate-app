@@ -31,7 +31,7 @@ const service = [
     title: "Media Production",
     content:
       "From concept development to post-production, we deliver high-quality visual content that enhances your brand narrative.",
-    img: "/Macy/macy2.jpeg ",
+    img: "/Macy/macy2.jpeg",
   },
 ];
 
@@ -39,7 +39,7 @@ function Services() {
   return (
     <div id="Services" className=" h-auto ">
       <div className="pt-1 flex flex-col items-center ">
-        <div className="pb-16 md:pb-24  text-center gap-y-3">
+        <div className="pb-16 md:pb-24  text-center space-y-2">
           <h6 className="capitalize text-Purple max-md:text-sm ">
             {" "}
             * What we do
@@ -49,7 +49,7 @@ function Services() {
             audience.
           </p>
         </div>
-        <ul className="md:hidden w-full h-full  cursor-pointer ">
+        <ul className="md:hidden w-full h-full  cursor-pointer px-1">
           {service.map((service) => (
             <ServiceSmall
               key={service.id}

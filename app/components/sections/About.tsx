@@ -13,7 +13,7 @@ function AboutMe() {
             &#65290; who we are
           </p>
         </div>
-        <p className="max-md:text-center text-background2 text-xl md:text-3xl 2xl:text-4xl w-[95%]  md:w-3/4 text-center font-medium text-pretty ">
+        <p className="max-md:text-center text-background2 text-2xl md:text-3xl 2xl:text-4xl w-[95%]  md:w-3/4 text-center font-medium text-pretty ">
           We are a creative team that believes every design tells a story,
           <span className="text-background2/45 ">
             {" "}

@@ -17,7 +17,7 @@ const ServiceSmall = ({ title, Img, id }: ServiceProps) => {
           alt={title}
           height={200}
           width={200}
-          className=" h-14 object-center object-cover w-20  rounded-lg"
+          className=" h-16 object-center object-cover w-20  rounded-lg"
         />
         <div>
           <h2 className=" text-2xl  font-medium">{title}</h2>
