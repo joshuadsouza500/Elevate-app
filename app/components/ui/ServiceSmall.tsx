@@ -17,10 +17,10 @@ const ServiceSmall = ({ title, Img, id }: ServiceProps) => {
           alt={title}
           height={200}
           width={200}
-          className=" h-14 object-center object-cover w-[75px]  rounded-lg"
+          className=" h-14 object-center object-cover w-20  rounded-lg"
         />
         <div>
-          <h2 className=" text-3xl  font-medium">{title}</h2>
+          <h2 className=" text-2xl  font-medium">{title}</h2>
         </div>
       </MotionDiv>
     </div>

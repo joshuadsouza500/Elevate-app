@@ -42,14 +42,16 @@ function Work() {
   return (
     <div
       id="Work"
-      className="h-auto  py-10  md:py-16 xl:py-20 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden"
+      className="h-auto py-16 xl:py-20 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden"
     >
-      <div className="pb-24">
-        <h6 className="capitalize text-Purple max-md:text-sm ">
+      <div className="pb-16 md:pb-24 text-center">
+        <h6 className="capitalize text-Purple max-md:text-sm  ">
           {" "}
           &#65290; our work
         </h6>
-        <p>Some text here</p>
+        <p className="mx-auto text-background2/80 text-sm font-medium w-[80%]  md:w-[70%]">
+          Check out our work and see how {"we've"} helped our clients
+        </p>
       </div>
       <section className="  grid md:grid-cols-2 gap-12 text-background2 mx-1">
         {worksData.map((work, index) => (

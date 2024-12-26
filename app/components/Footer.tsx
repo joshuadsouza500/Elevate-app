@@ -166,12 +166,12 @@ const Footer = () => {
 };
 const Footer2 = () => {
   return (
-    <footer className=" text-white  pb-2 md:pb-4 px-2 md:px-6 lg:px-8 ">
+    <footer className=" text-white  pb-2 md:pb-4 px-1 md:px-6 lg:px-8 ">
       <div className="container mx-auto max-w-7xl bg-zinc-950 pt-8   rounded-t-2xl rounded-br-2xl">
         <div className="grid gap-6 md:gap-12">
           {/* Main CTA Section */}
           <div
-            className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background w-full rounded-2xl flex flex-col place-items-center"
+            className="text-center max-w-[95%] sm:max-w-[90%] xl:max-w-5xl py-4 xl:py-10 mx-auto space-y-4 bg-background w-full rounded-2xl flex flex-col place-items-center"
             id="#CTA"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent">
@@ -187,7 +187,7 @@ const Footer2 = () => {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-zinc-800 w-full max-w-6xl mx-auto" />
+          <div className="border-t border-zinc-800 w-full max-w-6xl mx-auto px-1" />
 
           {/* Footer Content Grid */}
           <div className="grid px-2 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto  place-items-stretch  w-full">

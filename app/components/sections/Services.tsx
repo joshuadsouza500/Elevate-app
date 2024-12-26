@@ -39,7 +39,7 @@ function Services() {
   return (
     <div id="Services" className=" h-auto ">
       <div className="pt-1 flex flex-col items-center ">
-        <div className="pb-16 md:pb-24  text-center gap-y-1">
+        <div className="pb-16 md:pb-24  text-center gap-y-3">
           <h6 className="capitalize text-Purple max-md:text-sm ">
             {" "}
             * What we do
