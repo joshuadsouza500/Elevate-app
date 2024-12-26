@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { MotionP } from "../MotionDiv";
@@ -19,7 +20,7 @@ const Service2 = ({ title, Img, id, content }: ServiceProps) => {
   //If y is 200 {mousediv element} would show outside the box but when it is either -somenumber or - by height of the div it would show inside the div.
   // Update mouse position
 
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e: any) => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect(); //getBoundingClientRect provides details about the size of an element and its position relative to the viewport.
       const x = e.clientX - rect.left;

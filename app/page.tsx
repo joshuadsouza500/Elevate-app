@@ -1,19 +1,14 @@
-"use client";
-
 import RootLayout from "./layout";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 
 import Work from "./components/sections/Work";
-import Reviews from "./components/sections/Reviews";
-import ContactMe from "./components/ContactMe";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import NavBar from "./components/Navbar";
 import Services from "./components/sections/Services";
-import Service2 from "./components/ui/Service2";
-import Service3 from "./components/ui/ServiceSmall";
 
 //npm install to reinstall node modules//
 
