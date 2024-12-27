@@ -73,7 +73,7 @@ const CaseStudy = async ({
 
   return (
     <section className="max-w-5xl mx-auto px-3 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-white">
-      <div className="max-w-6xl  mx-auto pt-10 md:pt-24 pb-10">
+      <div className="max-w-6xl  mx-auto pt-10 pb-10">
         <h1 className="text-3xl font-mono md:text-4xl xl:text-5xl font-semibold text-gray-800">
           {work.company}
         </h1>
@@ -87,7 +87,7 @@ const CaseStudy = async ({
           <Image
             src={work.image}
             alt="CaseStudyStudy Study Main Image"
-            width={1000}
+            width={800}
             height={600}
             className="w-full h-auto object-cover rounded-lg"
           />

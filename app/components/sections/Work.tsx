@@ -42,7 +42,7 @@ function Work() {
   return (
     <div
       id="Work"
-      className="h-auto py-16 xl:py-20 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden"
+      className="h-auto py-16 xl:py-20 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden mb-10"
     >
       <div className="pb-16 md:pb-24 text-center space-y-2">
         <h6 className="capitalize text-Purple max-md:text-sm  ">
