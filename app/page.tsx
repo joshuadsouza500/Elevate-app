@@ -11,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 
 import NavBar from "./components/Navbar";
 import Services from "./components/sections/Services";
+import NavBar2 from "./components/ui/NavBar2";
 
 //npm install to reinstall node modules//
 
@@ -29,14 +30,17 @@ export default function Home() {
   return (
     <>
       <motion.div className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
-        {/***/}
+        <NavBar2 />
+        {/** <About />
+        <Services />
+        <Work />
+       */}
         <Hero />
         <section className="w-full h-28 bg-gray-300 my-8">
           <p className="text-center ">Logo Slider</p>
         </section>
-        <About />
-        <Services />
-        <Work />
+
+        <div className="h-[100vh] bg-orange-400"></div>
       </motion.div>
     </>
   );
