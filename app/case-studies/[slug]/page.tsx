@@ -89,7 +89,7 @@ const CaseStudy = async ({
             alt="CaseStudyStudy Study Main Image"
             width={800}
             height={600}
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto 2xl:h-[80%] object-cover rounded-lg"
           />
         </div>
 

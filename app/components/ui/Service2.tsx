@@ -51,7 +51,7 @@ const Service2 = ({ title, Img, id, content }: ServiceProps) => {
       <motion.div
         className="flex gap-x-8 items-center pl-1 w-full z-10 py-2"
         initial={{ opacity: 0.3 }}
-        animate={{ opacity: isHovering ? 1 : 0.3 }}
+        animate={{ opacity: isHovering ? 1 : 0.4 }}
         transition={{ duration: 0.3 }}
       >
         <p className="text-sm">{id + 1} .</p>

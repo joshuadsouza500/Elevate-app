@@ -1,3 +1,5 @@
+import { TextReveal } from "../ui/TextReveal";
+
 function AboutMe() {
   return (
     <>
@@ -13,7 +15,13 @@ function AboutMe() {
             &#65290; who we are
           </p>
         </div>
-        <p className="max-md:text-center text-background2 text-xl md:text-3xl 2xl:text-4xl w-[95%]  md:w-3/4 text-center font-medium text-pretty ">
+        <TextReveal
+          text="We are a creative team that believes every design tells a story, and our job is to bring that story to life in the most impactful
+            way."
+          Colour="text-background2"
+        />
+
+        <p className="max-md:text-center text-background2 text-xl md:text-3xl 2xl:text-4xl w-[95%]  md:w-3/4 text-center font-medium text-pretty bg-red-400 hidden">
           We are a creative team that believes every design tells a story,
           <span className="text-background2/45 ">
             {" "}

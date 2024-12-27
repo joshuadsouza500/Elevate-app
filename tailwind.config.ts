@@ -21,6 +21,9 @@ const config: Config = {
         "extra-loose": "3rem",
         "12": "3.5rem",
       },
+      maxWidth: {
+        "8xl": "1440px",
+      },
     },
   },
   plugins: [require("daisyui")],

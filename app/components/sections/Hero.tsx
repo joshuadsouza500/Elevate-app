@@ -25,7 +25,7 @@ function Hero() {
           Unlock Your {"Brand's"} Potential with Tailored Strategies that Engage
           and Inspire
         </p>
-        <button className="group md:w-32 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple to-zinc-500 hover:border-white">
+        <button className="group md:w-36 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple to-zinc-500 hover:border-white">
           <Link href="/contact" className="  flex items-center">
             Contact me
             <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
