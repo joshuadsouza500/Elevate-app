@@ -11,23 +11,23 @@ import {
 
 const NavBar2 = () => {
   const { scrollY } = useScroll();
-  const [width, setWidth] = useState(100);
-  const springWidth = useSpring(width, { stiffness: 300, damping: 30 });
+  const [width, setWidth] = useState("100%");
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 100) {
-      setWidth(80);
+      setWidth("80%");
     } else {
-      setWidth(100);
+      setWidth("100%");
     }
-    console.log("Scrollty", latest);
+    // console.log("Scrollty", latest);
   });
 
   return (
     <MotionNav
-      className=" flex   border-b border-background2/10  px-2  mx-auto   z-20 bg-white sticky top-0 rounded-2xl "
+      className=" flex   border-b border-background2/10  p-2  mx-auto   z-20 bg-white sticky top-0 rounded-2xl xl:p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      style={{ width: springWidth + "%" }}
+      style={{ width: width }}
     >
       <div className="absolute right-6 md:hidden">
         <div
