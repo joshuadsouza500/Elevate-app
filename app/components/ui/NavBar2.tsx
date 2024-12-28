@@ -43,9 +43,9 @@ const NavBar2 = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       style={{ width: Width, backgroundColor: BgColour }}
     >
-      <div className="absolute right-6 md:hidden">
+      <div className="absolute right-6 md:hidden  ">
         <div
-          className="dropdown dropdown-end 
+          className="dropdown dropdown-left dropdown-bottom
   "
         >
           <div
@@ -55,7 +55,7 @@ const NavBar2 = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -68,31 +68,30 @@ const NavBar2 = () => {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content z-[1] menu p-2 shadow bg-background rounded-box w-52 "
-          >
-            <li>
-              <Link href="#Home">Home</Link>
-            </li>
-            <li>
-              <Link href="#About">About</Link>
-            </li>
-            <li>
-              <Link href="#Services"> Services</Link>
-            </li>
-            <li>
-              <Link href="#Work">Our Work</Link>
-            </li>
+          <div className="dropdown-content ">
+            <ul
+              tabIndex={0}
+              className=" text-xl   z-[1] menu p-2  shadow bg-background text-background2 font-medium rounded-box w-64 "
+            >
+              <li className="">
+                <Link href="#Home">Home</Link>
+              </li>
+              <li>
+                <Link href="#About">About</Link>
+              </li>
+              <li>
+                <Link href="#Services"> Services</Link>
+              </li>
 
-            <li>
-              <Link href="#Contact">Contact Us</Link>
-            </li>
-          </ul>
+              <li>
+                <Link href="#Contact">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="flex ">
-        <svg
+        {/**  <svg
           xmlns="http://www.w3.org/2000/svg"
           width="41"
           height="44"
@@ -107,7 +106,7 @@ const NavBar2 = () => {
             fill="#FAFAF5"
             d="m19.867 1.739 16.775 30.533-32.484.58 15.71-31.113Z"
           />
-        </svg>
+        </svg> */}
         <h4 className=" text-background2 text-xl md:text-3xl pt-2 pl-1  font-bold tracking-tight">
           Elevate<span className="text-primary">.</span>
         </h4>
@@ -153,5 +152,38 @@ const NavBar2 = () => {
 export default NavBar2;
 
 {
-  /**   */
+  /**   
+<div className="drawer">
+  <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content flex flex-col">
+   
+    <div className="navbar bg-base-300 w-full">
+      <div className="flex-none lg:hidden">
+        <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="inline-block h-6 w-6 stroke-current">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </label>
+      </div>
+      
+ 
+  </div>
+  <div className="drawer-side">
+    <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu bg-base-200 min-h-full w-80 p-4">
+    
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
+</div>
+**/
 }
