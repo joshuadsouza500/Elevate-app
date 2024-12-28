@@ -166,7 +166,7 @@ const Footer = () => {
 };
 const Footer2 = () => {
   return (
-    <footer className=" text-white  pb-2 md:pb-4 px-1 md:px-6 lg:px-8 max-w-8xl">
+    <footer className=" text-white mx-auto  pb-2 md:pb-4 px-1 md:px-6 lg:px-8 max-w-8xl">
       <div className="  mx-auto  bg-zinc-950 pt-4   rounded-t-2xl rounded-br-2xl">
         <div className="grid gap-6 md:gap-12">
           {/* Main CTA Section */}

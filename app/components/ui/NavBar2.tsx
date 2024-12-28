@@ -11,23 +11,37 @@ import {
 
 const NavBar2 = () => {
   const { scrollY } = useScroll();
-  const [width, setWidth] = useState("100%");
+  const [hidden, setHidden] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 100) {
-      setWidth("80%");
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 300) {
+      setHidden(true);
     } else {
-      setWidth("100%");
+      setHidden(false);
     }
-    // console.log("Scrollty", latest);
   });
 
+  const Width = useTransform(scrollY, [0, 100], ["100%", "75%"]);
+  const BgColour = useTransform(
+    scrollY,
+    [0, 100],
+    ["#FAFAF5", "rgba(245,245,245,0.9)"]
+  );
   return (
     <MotionNav
-      className=" flex   border-b border-background2/10  p-2  mx-auto   z-20 bg-white sticky top-0 rounded-2xl xl:p-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      style={{ width: width }}
+      className=" flex     p-2  mx-auto  z-20 bg-red-500 sticky top-0.5 mb-1 rounded-full xl:p-4 "
+      variants={{
+        hidden: {
+          y: -100,
+        },
+        visible: {
+          y: 0,
+        },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      style={{ width: Width, backgroundColor: BgColour }}
     >
       <div className="absolute right-6 md:hidden">
         <div
@@ -99,8 +113,8 @@ const NavBar2 = () => {
         </h4>
       </div>
 
-      <nav className="w-full hidden md:flex justify-between items-center ml-10 pt-1">
-        <ul className="flex flex-row justify-around gap-4 pr-8 mr-2  text-lg font-semibold text-background2 ">
+      <nav className="w-full hidden md:flex justify-between items-center ml-32 pt-1">
+        <ul className="flex flex-row justify-around gap-4 pr-8 mr-2  text-lg font-medium text-background2 ">
           <li>
             <Link
               href="#Home"
