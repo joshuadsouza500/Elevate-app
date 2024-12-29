@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import { Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
@@ -23,6 +24,15 @@ const config: Config = {
       },
       maxWidth: {
         "8xl": "1440px",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "loop-scroll": "loop-scroll 30s  linear infinite",
       },
     },
   },
