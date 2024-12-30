@@ -11,25 +11,25 @@ const Images = [
 ];
 const Slider = () => {
   return (
-    <section className="flex flex-col items-center py-6 md:py-12">
+    <section className="flex flex-col items-center pt-8 pb-3 md:py-12">
       <div>
-        <p className="capitalize text-Purple max-md:text-sm font-medium">
+        <p className=" text-Purple max-md:text-sm font-medium">
           {" "}
-          &#65290; who {"we've"} worked with
+          &#65290; Who {"we've"} worked with
         </p>
       </div>
       <div className="relative w-full py-2  overflow-hidden">
         <div className="absolute left-0 top-0 z-10 h-full w-10 sm:w-14 lg:w-20 bg-gradient-to-r from-background to-transparent" />
         <div className="absolute right-0 top-0 z-10 h-full w-10 sm:w-14 lg:w-20 bg-gradient-to-l from-background to-transparent" />
         <MotionDiv
-          className="flex    gap-x-16  "
+          className="flex    gap-x-8 md:gap-x-16  "
           // initial={{ x: 0 }}
           //  animate={{ x: "-100%" }}
           //  transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
-          <div className="flex   items-center  w-full gap-x-12 md:gap-x-24  animate-loop-scroll justify-around ">
+          <div className="flex   items-center  w-full gap-x-8 md:gap-x-24  animate-loop-scroll justify-around ">
             {Images.map((image) => (
-              <div key={image.id} className="size-20 md:size-28 ">
+              <div key={image.id} className="size-16 md:size-28 ">
                 {" "}
                 <Image
                   height={100}
@@ -41,9 +41,9 @@ const Slider = () => {
               </div>
             ))}
           </div>
-          <div className="flex  items-center  w-full gap-x-12  md:gap-x-24  animate-loop-scroll justify-around ">
+          <div className="flex  items-center  w-full gap-x-8  md:gap-x-24  animate-loop-scroll justify-around ">
             {Images.map((image) => (
-              <div key={image.id} className="size-20 md:size-28 ">
+              <div key={image.id} className="size-16 md:size-28 ">
                 {" "}
                 <Image
                   height={100}

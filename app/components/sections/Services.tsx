@@ -37,14 +37,14 @@ const service = [
 
 function Services() {
   return (
-    <div id="Services" className=" h-auto ">
+    <div id="Services" className=" h-auto xl:pt-20">
       <div className="pt-1 flex flex-col items-center ">
         <div className="pb-16 md:pb-24  text-center space-y-2">
           <h6 className="capitalize text-Purple max-md:text-sm ">
             {" "}
             * What we do
           </h6>
-          <p className="mx-auto text-background2/80 text-xs font-medium w-[80%]  md:w-[70%]">
+          <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
             {"Here's"} how we can help your brand shine and connect with your
             audience.
           </p>
