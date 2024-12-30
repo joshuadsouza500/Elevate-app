@@ -202,8 +202,31 @@ const Footer2 = () => {
               </p>
             </div>
 
-            <div className="w-full flex justify-between md:justify-end md:gap-x-16 lg:gap-x-24 items-center pb-4">
+            <div className="w-full flex justify-between  md:justify-end md:gap-x-16 lg:gap-x-24 items-center pb-4">
               {/* Quick Links */}
+
+              {/* Contact Info */}
+              <div className="h-full">
+                <h3 className="text-sm font-semibold mb-4 text-zinc-300">
+                  Contact
+                </h3>
+                <ul className="space-y-2 md:space-y-3 text-sm text-zinc-400">
+                  <li>
+                    <Link
+                      href="mailto:hello@Elevate.dev"
+                      className="hover:text-white transition-colors"
+                    >
+                      hello@Elevate.dev
+                    </Link>
+                  </li>
+                  <li>+973 3456-778</li>
+                  <li>
+                    123 Innovation Street
+                    <br />
+                    Tech City, TC 12345
+                  </li>
+                </ul>
+              </div>
               <div>
                 <h3 className="text-sm font-semibold mb-4 text-zinc-300">
                   Links
@@ -240,29 +263,6 @@ const Footer2 = () => {
                     >
                       Contact
                     </Link>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Contact Info */}
-              <div className="h-full">
-                <h3 className="text-sm font-semibold mb-4 text-zinc-300">
-                  Contact
-                </h3>
-                <ul className="space-y-2 md:space-y-3 text-sm text-zinc-400">
-                  <li>
-                    <Link
-                      href="mailto:hello@Elevate.dev"
-                      className="hover:text-white transition-colors"
-                    >
-                      hello@Elevate.dev
-                    </Link>
-                  </li>
-                  <li>+973 3456-778</li>
-                  <li>
-                    123 Innovation Street
-                    <br />
-                    Tech City, TC 12345
                   </li>
                 </ul>
               </div>

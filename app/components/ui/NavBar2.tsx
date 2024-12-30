@@ -43,9 +43,9 @@ const NavBar2 = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       style={{ width: Width, backgroundColor: BgColour }}
     >
-      <div className="absolute right-6 md:hidden  ">
+      <div className="absolute right-4 md:hidden  ">
         <div
-          className="dropdown dropdown-left dropdown-bottom
+          className="dropdown dropdown-end dropdown-bottom
   "
         >
           <div
@@ -71,7 +71,7 @@ const NavBar2 = () => {
           <div className="dropdown-content ">
             <ul
               tabIndex={0}
-              className=" text-xl   z-[1] menu p-2  shadow bg-background text-background2 font-medium rounded-box w-64 "
+              className=" text-xl   z-[1] menu p-2  shadow bg-background text-background2 font-medium rounded-box w-44 "
             >
               <li className="">
                 <Link href="#Home">Home</Link>

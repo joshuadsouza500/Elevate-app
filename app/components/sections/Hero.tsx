@@ -3,14 +3,15 @@ import React from "react";
 import { MotionDiv, Motionh1, MotionP } from "../MotionDiv";
 import NavBar from "../Navbar";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 function Hero() {
   return (
     <section
       id="Home"
-      className="flex flex-col md:flex-row justify-between items-start h-auto    bg-gradient-to-br from-Purple/10 to-white  "
+      className="flex flex-col md:flex-row justify-between items-start h-[80vh] md:h-auto    bg-gradient-to-br from-background to-Purple/20  "
     >
-      <div className="w-full md:w-1/2  h-full flex flex-col max-md:text-center max-md:items-center justify-center pt-44 pb-6">
+      <div className="w-full md:w-1/2  h-full flex flex-col max-md:text-center max-md:items-center justify-center md:pt-32 xl:pt-40 pb-6">
         <h1 className=" text-stone-950 leading-[1.15] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  2xl:text-6xl  ">
           Elevate your brand,
           <br className="hidden 2xl:block" />{" "}
@@ -32,17 +33,19 @@ function Hero() {
           </Link>
         </button>
       </div>
-      <div className="hidden md:block md:w-1/2 aspect-square bg-Purple  relative rounded-xl bg-[url('/Macy/macy2.jpeg')] bg-cover bg-center shadow-lg">
-        <div className="w-24 h-16 rounded-br-xl bg-background top-0 left-0 absolute" />
-
+      <div className="hidden md:block h-full w-1/2 aspect-square  bg-[url('/Box.svg')]  bg-center bg-no-repeat relative">
         <div className="w-28 h-16 rounded-tl-xl bg-background bottom-0 right-0 absolute pl-2">
           <h6 className="text-sm stat-value">
             200+ <br /> Projects completed
           </h6>{" "}
         </div>
+        ;
       </div>
     </section>
   );
 }
 
 export default Hero;
+{
+  /** */
+}

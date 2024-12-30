@@ -7,7 +7,7 @@ const Images = [
   { id: 2, img: "/Logos/podcastle.svg" },
   { id: 3, img: "/Logos/Logo1.svg" },
   { id: 4, img: "/Logos/venc.svg" },
-  //{ id: 5, img: "/Logos/taper.svg" },
+  { id: 5, img: "/Logos/taper.svg" },
 ];
 const Slider = () => {
   return (
@@ -18,18 +18,18 @@ const Slider = () => {
           &#65290; who {"we've"} worked with
         </p>
       </div>
-      <div className="relative w-full py-6  overflow-hidden">
-        <div className="absolute left-0 top-0 z-10 h-full w-20 backdrop-blur-[1px]" />
-        <div className="absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-background to-transparent" />
+      <div className="relative w-full py-2  overflow-hidden">
+        <div className="absolute left-0 top-0 z-10 h-full w-10 sm:w-14 lg:w-20 bg-gradient-to-r from-background to-transparent" />
+        <div className="absolute right-0 top-0 z-10 h-full w-10 sm:w-14 lg:w-20 bg-gradient-to-l from-background to-transparent" />
         <MotionDiv
           className="flex    gap-x-16  "
           // initial={{ x: 0 }}
           //  animate={{ x: "-100%" }}
           //  transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
         >
-          <div className="flex   items-center  w-full gap-x-12 md:gap-x-16  animate-loop-scroll justify-around ">
+          <div className="flex   items-center  w-full gap-x-12 md:gap-x-24  animate-loop-scroll justify-around ">
             {Images.map((image) => (
-              <div key={image.id} className="size-24 ">
+              <div key={image.id} className="size-20 md:size-28 ">
                 {" "}
                 <Image
                   height={100}
@@ -41,9 +41,9 @@ const Slider = () => {
               </div>
             ))}
           </div>
-          <div className="flex  items-center  w-full gap-x-12  md:gap-x-16  animate-loop-scroll justify-around ">
+          <div className="flex  items-center  w-full gap-x-12  md:gap-x-24  animate-loop-scroll justify-around ">
             {Images.map((image) => (
-              <div key={image.id} className="size-24 ">
+              <div key={image.id} className="size-20 md:size-28 ">
                 {" "}
                 <Image
                   height={100}

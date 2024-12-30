@@ -32,15 +32,13 @@ export default function Home() {
     <>
       <motion.div className="max-w-5xl mx-auto px-2 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
         <NavBar2 />
-        {/**
-         
-       
-        <Services />
-        <Work />*/}
-        <Hero />
+        {/***/}
 
+        <Hero />
         <Slider />
         <About />
+        <Services />
+        <Work />
       </motion.div>
     </>
   );
