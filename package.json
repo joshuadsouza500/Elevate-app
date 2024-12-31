@@ -10,7 +10,7 @@
     "generate-sitemap": "sitemap-generator -u https://elevate-app-bh.vercel.app -f /sitemap.xml"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
+    "lenis": "^1.1.18",
     "clsx": "^2.1.1",
     "framer-motion": "^11.0.18",
     "lucide-react": "^0.469.0",

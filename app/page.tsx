@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from "react";
 import Services from "./components/sections/Services";
 
 import Slider from "./components/sections/Slider";
-import Lenis from "@studio-freight/lenis/types";
+import Lenis from "lenis";
 
 //npm install to reinstall node modules//
 
