@@ -10,7 +10,7 @@ function Hero() {
   return (
     <section
       id="Home"
-      className="flex flex-col lg:flex-row justify-start items-start h-[100vh] lg:h-auto   bg-cover   max-lg:bg-[url('/Blob2.svg')] bg-center bg-no-repeat mx-1 max-lg:rounded-2xl"
+      className="flex flex-col lg:flex-row justify-start items-start h-[100vh] lg:h-auto   bg-cover   max-lg:bg-[url('/Blob2.svg')] bg-center bg-no-repeat mx-1 max-lg:rounded-2xl max-md:px-2"
     >
       <div className="w-full lg:w-1/2  h-full flex flex-col max-lg:text-center max-lg:items-center bg-cover justify-center lg:pt-32 xl:pt-24  pb-6 max-lg:bg-[url('/Blob1.svg')] bg-opacity-50 bg-center bg-no-repeat    xl:pl-2 max-lg:rounded-2xl">
         <h1 className=" text-stone-950 leading-[1.15] lg:leading-[1.1]   font-semibold capitalize text-4xl   lg:text-5xl  2xl:text-6xl  ">

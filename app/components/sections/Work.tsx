@@ -44,11 +44,8 @@ function Work() {
       id="Work"
       className="h-auto py-16 xl:py-28 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden mb-10"
     >
-      <div className="pb-16 md:pb-24 text-center space-y-2">
-        <h6 className="capitalize text-Purple max-md:text-sm  ">
-          {" "}
-          &#65290; our work
-        </h6>
+      <div className="pb-12 md:pb-24 text-center space-y-2">
+        <h6 className="text-Purple max-md:text-sm font-medium"> * Our work</h6>
         <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
           Check out our work and see how {"we've"} helped our clients
         </p>

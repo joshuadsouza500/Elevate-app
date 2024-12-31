@@ -5,14 +5,14 @@ function AboutMe() {
     <>
       <div
         id="About"
-        className="h-auto  pt-2 pb-10 xl:pt-10 xl:pb-20 flex items-center  flex-col gap-3 md:gap-y-5
+        className="h-auto   pt-2 pb-10 xl:pt-10 xl:pb-20 flex items-center  flex-col gap-3 md:gap-y-5
       
     "
       >
         <div>
           <p className=" text-Purple max-md:text-sm font-medium">
             {" "}
-            &#65290; Who we are
+            * Who we are
           </p>
         </div>
         <TextReveal
