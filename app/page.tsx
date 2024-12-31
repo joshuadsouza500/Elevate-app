@@ -12,20 +12,20 @@ import { useEffect, useRef, useState } from "react";
 import Services from "./components/sections/Services";
 
 import Slider from "./components/sections/Slider";
+import Lenis from "@studio-freight/lenis/types";
 
 //npm install to reinstall node modules//
 
 export default function Home() {
-  /**  useEffect( () => {
-            const lenis = new Lenis()
+  /***/ useEffect(() => {
+    const lenis = new Lenis();
 
-            function raf(time: number) {
-              lenis.raf(time)  
-              requestAnimationFrame(raf)
-            }
-            requestAnimationFrame(raf)
-          })
- */
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  });
 
   return (
     <>
