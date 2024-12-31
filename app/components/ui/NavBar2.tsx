@@ -8,6 +8,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 const NavBar2 = () => {
   const { scrollY } = useScroll();
@@ -26,11 +27,11 @@ const NavBar2 = () => {
   const BgColour = useTransform(
     scrollY,
     [0, 100],
-    ["#FAFAF5", "rgba(245,245,245,0.9)"]
+    ["#FAFAF5 ", "rgba(245,245,245,0.9)"]
   );
   return (
     <MotionNav
-      className=" flex     p-2  mx-auto  z-20 bg-red-500 sticky top-0.5 mb-1 rounded-full xl:p-4 "
+      className=" flex    p-2  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full lg:p-4 items-center"
       variants={{
         hidden: {
           y: -100,
@@ -90,34 +91,18 @@ const NavBar2 = () => {
           </div>
         </div>
       </div>
-      <div className="flex ">
-        {/**  <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="41"
-          height="44"
-          fill="none"
-          viewBox="0 0 41 44"
-        >
-          <path
-            fill="#1C1616"
-            d="M20.594 43.089 2.78 10.943l35.345-.154-17.532 32.3Z"
-          />
-          <path
-            fill="#FAFAF5"
-            d="m19.867 1.739 16.775 30.533-32.484.58 15.71-31.113Z"
-          />
-        </svg> */}
-        <h4 className=" text-background2 text-xl md:text-3xl pt-2 pl-1  font-bold tracking-tight">
+      <div className="flex  md:w-[55%]">
+        <h4 className=" text-background2 text-xl md:text-3xl   pl-1  font-bold tracking-tight">
           Elevate<span className="text-primary">.</span>
         </h4>
       </div>
 
-      <nav className="w-full hidden md:flex justify-between items-center ml-32 pt-1">
+      <nav className="w-full hidden md:flex justify-between items-center   ">
         <ul className="flex flex-row justify-around gap-4 pr-8 mr-2  text-lg font-medium text-background2 ">
           <li>
             <Link
               href="#Home"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:border-solid scroll-smooth"
+              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
             >
               Home
             </Link>
@@ -125,7 +110,7 @@ const NavBar2 = () => {
           <li>
             <Link
               href="#About"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:border-solid scroll-smooth"
+              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
             >
               About
             </Link>
@@ -133,15 +118,16 @@ const NavBar2 = () => {
           <li>
             <Link
               href="#Services"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:border-solid scroll-smooth"
+              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
             >
               Services
             </Link>
           </li>
         </ul>
-        <button className="w-24 md:w-32 rounded-2xl bg-purple-400 h-9 text-background hover:bg-purple-700 ">
-          <Link href="/contact" className=" ">
-            Contact
+        <button className="group lg:w-36 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple to-zinc-500 hover:border-white">
+          <Link href="/contact" className="  flex items-center">
+            Contact me
+            <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
           </Link>
         </button>
       </nav>

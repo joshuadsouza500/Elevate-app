@@ -49,7 +49,7 @@ function Work() {
           {" "}
           &#65290; our work
         </h6>
-        <p className="mx-auto text-background2/80 max-md: font-medium w-[70%]">
+        <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
           Check out our work and see how {"we've"} helped our clients
         </p>
       </div>

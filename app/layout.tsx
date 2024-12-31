@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Footer1 from "./components/ui/Footer1";
 import Footer2 from "./components/Footer";
+import NavBar2 from "./components/ui/NavBar2";
 
 export const metadata: Metadata = {
   verification: {
@@ -41,6 +42,7 @@ export default function RootLayout({
 font-Poppins"
     >
       <body className="bg-background">
+        <NavBar2 />
         {children}
 
         <Footer2 />
