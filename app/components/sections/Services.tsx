@@ -40,10 +40,14 @@ function Services() {
     <div id="Services" className=" h-auto pt-6 xl:pt-20">
       <div className="pt-1 flex flex-col items-center ">
         <div className="pb-12 md:pb-24  text-center space-y-2">
-          <h6 className="text-Purple max-md:text-sm font-medium ">
+          <h6 className="text-Purple max-md:text-sm font-medium hidden">
             {" "}
             * What we do
           </h6>
+          <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-purple-100 px-2 md:px-3 py-1 rounded-full ">
+            <span className="size-1.5 rounded-full bg-purple-400"></span>
+            <p className=" text-Purple ">What we do</p>
+          </div>
           <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
             {"Here's"} how we can help your brand shine and connect with your
             audience.

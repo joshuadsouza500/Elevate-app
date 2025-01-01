@@ -31,7 +31,7 @@ const NavBar2 = () => {
   );
   return (
     <MotionNav
-      className=" flex    py-4 px-2  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full lg:p-4 items-center"
+      className=" flex    py-4 px-2  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full lg:p-4 items-center max-w-7xl 2xl:max-w-8xl "
       variants={{
         hidden: {
           y: -100,

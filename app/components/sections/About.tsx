@@ -10,10 +10,14 @@ function AboutMe() {
     "
       >
         <div>
-          <p className=" text-Purple max-md:text-sm font-medium">
+          <p className=" text-Purple max-md:text-sm font-medium hidden">
             {" "}
             * Who we are
           </p>
+          <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-purple-100 px-2 md:px-3 py-1 rounded-full border border-purple-500">
+            <span className="size-1.5 rounded-full bg-purple-400"></span>
+            <p className=" text-Purple ">Who we are</p>
+          </div>
         </div>
         <TextReveal
           text="We are a creative team that believes every design tells a story, and our job is to bring that story to life in the most impactful
