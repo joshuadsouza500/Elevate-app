@@ -13,7 +13,7 @@ const Slider = () => {
   return (
     <section className="flex flex-col items-center pt-12 pb-3 md:py-12  ">
       <div>
-        <p className="text-xs md:text-sm   font-medium text-background2/70 text-center w-[70%] mx-auto">
+        <p className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70 text-center w-[70%] mx-auto">
           Over the years we have collaborated with some amazing brands
         </p>
         <p className=" text-Purple max-md:text-sm font-medium hidden">

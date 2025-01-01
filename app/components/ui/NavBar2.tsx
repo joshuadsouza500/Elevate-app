@@ -31,7 +31,7 @@ const NavBar2 = () => {
   );
   return (
     <MotionNav
-      className=" flex    py-4 px-2  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full lg:p-4 items-center max-w-7xl 2xl:max-w-8xl "
+      className=" md:px-6 flex    p-4 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-4 items-center max-w-7xl 2xl:max-w-8xl "
       variants={{
         hidden: {
           y: -100,
@@ -44,7 +44,7 @@ const NavBar2 = () => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       style={{ width: Width, backgroundColor: BgColour }}
     >
-      <div className="absolute right-4 md:hidden  ">
+      <div className="absolute right-2 md:hidden  ">
         <div
           className="dropdown dropdown-end dropdown-bottom
   "
@@ -92,7 +92,7 @@ const NavBar2 = () => {
         </div>
       </div>
       <div className="flex  md:w-[55%]">
-        <h4 className=" text-background2 text-xl md:text-3xl   pl-1  font-bold tracking-tight">
+        <h4 className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight">
           Elevate<span className="text-primary">.</span>
         </h4>
       </div>
