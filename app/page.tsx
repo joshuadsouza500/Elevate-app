@@ -13,6 +13,7 @@ import Services from "./components/sections/Services";
 
 import Slider from "./components/sections/Slider";
 import Lenis from "lenis";
+import Hero2 from "./components/sections/Hero2";
 
 //npm install to reinstall node modules//
 
@@ -31,7 +32,7 @@ export default function Home() {
     <>
       <motion.div className="max-w-5xl mx-auto  lg:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
         {" "}
-        <Hero />
+        <Hero2 />
         <motion.div className=" mx-auto px-2 md:px-6 ">
           <Slider />
           <About />
