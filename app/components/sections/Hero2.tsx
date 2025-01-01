@@ -10,9 +10,9 @@ function Hero2() {
   return (
     <section
       id="Home"
-      className="flex flex-col  justify-start items-start h-[100vh] lg:h-auto   bg-cover   max-lg:bg-[url('/Blob2.svg')] bg-center bg-no-repeat mx-1 max-lg:rounded-2xl max-md:px-2"
+      className="flex flex-col  justify-start items-start h-[100vh] lg:h-auto   bg-cover    bg-center bg-no-repeat mx-1 max-lg:rounded-2xl max-md:px-2"
     >
-      <div className="w-full   h-full flex flex-col text-center items-center bg-cover justify-center lg:pt-32 xl:pt-24  pb-6 max:bg-[url('/Blob1.svg')] bg-opacity-50 bg-center bg-no-repeat    rounded-2xl">
+      <div className="w-full   h-full flex flex-col text-center items-center bg-cover justify-center lg:pt-32 xl:pt-24  pb-6 bg-[url('/Blob2.svg')] bg-opacity-50 bg-center bg-no-repeat    rounded-2xl">
         <h1 className=" text-stone-950 leading-[1.15] lg:leading-[1.1]   font-semibold capitalize text-4xl   lg:text-5xl  2xl:text-6xl  ">
           Elevate your brand,
           <br className="md:block hidden 2xl:block" />{" "}
@@ -27,7 +27,7 @@ function Hero2() {
           Unlock Your {"Brand's"} Potential with Tailored Strategies that Engage
           and Inspire
         </p>
-        <button className="group lg:w-36 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple to-zinc-300 hover:border-white">
+        <button className="group lg:w-36 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple/70 to-zinc-500 hover:border-white">
           <Link href="/contact" className="  flex items-center">
             Contact me
             <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />

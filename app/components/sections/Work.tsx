@@ -44,12 +44,12 @@ function Work() {
       id="Work"
       className="h-auto py-16 xl:py-28 flex items-center  flex-col gap-y-3 md:gap-y-5  overflow-hidden mb-10"
     >
-      <div className="pb-12 md:pb-24 text-center space-y-2 items-center flex-col justify-center">
+      <div className="pb-12 md:pb-24 text-center space-y-2 items-center flex flex-col justify-center ">
         <h6 className="text-Purple max-md:text-sm font-medium hidden">
           {" "}
           * Our work
         </h6>
-        <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-purple-50 px-2 md:px-3 py-1 rounded-full  justify-center">
+        <div className="  text-xs md:text-sm font-medium bg-gradient-to-br from-Purple/15 to-Purple/5 px-2 md:px-3 py-1 rounded-full ">
           <p className=" text-Purple ">Our work</p>
         </div>
         <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[65%]">

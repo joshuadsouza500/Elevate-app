@@ -38,11 +38,8 @@ export default function Home() {
           <About />
           <Services />
           <Work />
-          {/**
-         
 
-       
-       */}
+          {/**  */}
         </motion.div>
       </motion.div>
     </>

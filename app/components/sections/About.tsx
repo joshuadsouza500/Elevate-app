@@ -14,8 +14,8 @@ function AboutMe() {
             {" "}
             * Who we are
           </p>
-          <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-purple-100 px-2 md:px-3 py-1 rounded-full border border-purple-500">
-            <span className="size-1.5 rounded-full bg-purple-400"></span>
+          <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-Purple/5 px-2 md:px-3 py-1 rounded-full justify-center">
+            <span className="size-1 animate-pulse rounded-full bg-indigo-700"></span>
             <p className=" text-Purple ">Who we are</p>
           </div>
         </div>

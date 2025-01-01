@@ -45,7 +45,7 @@ function Services() {
             * What we do
           </h6>
           <div className="flex items-center gap-x-1 text-xs md:text-sm font-medium  bg-Purple/10 px-2 md:px-3 py-1 rounded-full justify-center">
-            <span className="size-1.5 rounded-full bg-primary animate-pulse"></span>
+            <span className="size-[5px] rounded-full bg-primary animate-pulse"></span>
             <p className=" text-Purple ">What we do</p>
           </div>
           <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
