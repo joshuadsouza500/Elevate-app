@@ -11,7 +11,7 @@ const Images = [
 ];
 const Slider = () => {
   return (
-    <section className="flex flex-col items-center pt-12 pb-3 md:py-12  ">
+    <section className="flex flex-col items-center pt-10 pb-3 md:py-10 bg-Purple/5 ">
       <div>
         <p className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70 text-center w-[70%] mx-auto">
           Over the years we have collaborated with some amazing brands

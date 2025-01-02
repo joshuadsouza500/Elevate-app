@@ -35,12 +35,12 @@ export default function Home() {
         <Hero2 />
         <motion.div className=" mx-auto px-2 md:px-6 ">
           <Slider />
-
+          {/**
           <About />
           <Services />
           <Work />
 
-          {/**  */}
+            */}
         </motion.div>
       </motion.div>
     </>

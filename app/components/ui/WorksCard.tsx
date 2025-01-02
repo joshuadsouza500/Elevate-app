@@ -34,7 +34,7 @@ export default function WorksCard({
               services.map((service) => (
                 <span
                   key={service}
-                  className=" w-auto px-3 py-1 capitalize bg-Purple/60 text-background rounded-xl"
+                  className=" w-auto px-3 py-1 capitalize bg-Purple/40 text-background rounded-xl"
                 >
                   {service}
                 </span>

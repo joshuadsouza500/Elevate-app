@@ -18,6 +18,10 @@ const config: Config = {
         background2: "#100E0E",
         Purple: "#7163BA",
       },
+      backgroundImage: (theme) => ({
+        "radial-gradient-custom":
+          "radial-gradient(circle, rgb(113 99 186 / 0.05), rgb(113 99 186 / 0.25)",
+      }),
       lineHeight: {
         "extra-loose": "3rem",
         "12": "3.5rem",

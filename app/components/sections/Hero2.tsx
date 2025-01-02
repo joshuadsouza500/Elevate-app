@@ -11,10 +11,10 @@ function Hero2() {
   return (
     <section
       id="Home"
-      className="flex flex-col  justify-start items-start h-[100vh] xl:h-auto pb-4 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1 md:bg-[url('/Blob5.svg')]  rounded-2xl max-md:px-2 overflow-hidden"
+      className="md:bg-radial-gradient-custom  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1  md:bg-opacity-10  rounded-2xl max-md:px-2 overflow-hidden"
     >
-      <div className="w-full   h-[60%] flex flex-col text-center items-center bg-cover justify-center lg:pt-32 xl:pt-28  pb-1  lg:pb-16 bg-opacity-50 bg-center bg-no-repeat    rounded-2xl max-md:bg-[url('/Blob2.svg')] ">
-        <h1 className=" text-stone-950 leading-[1.2] lg:leading-[1.1]   font-semibold capitalize text-4xl   lg:text-5xl  xl:text-6xl xl:leading-[1.1]  ">
+      <div className="w-full   h-[60%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md:bg-[url('/Blob2.svg')] ">
+        <h1 className=" text-stone-950 leading-[1.2] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  xl:text-6xl xl:leading-[1.1]  ">
           Elevate your brand,
           <br className="md:block hidden 2xl:block" />{" "}
           <span className="text-indigo-600 ">captivate</span> your audience!
