@@ -49,20 +49,20 @@ const Service2 = ({ title, Img, id, content }: ServiceProps) => {
       className=" text-black border-b-black/20 border-b-2 mx-auto  relative w-full flex justify-between py-10 h-auto  group"
     >
       <motion.div
-        className="flex gap-x-8 items-center pl-1 w-full z-10 py-2"
-        initial={{ opacity: 0.3 }}
-        animate={{ opacity: isHovering ? 1 : 0.4 }}
+        className="flex gap-x-8 items-center pl-1 w-full z-10 py-2  "
+        initial={{ opacity: 1 }}
+        animate={{ opacity: isHovering ? 1 : 0.7 }}
         transition={{ duration: 0.3 }}
       >
-        <p className="text-sm">{id + 1} .</p>
-        <h2 className="text-4xl xl:text-4xl font-medium">{title}</h2>
+        <p className="text-sm font-medium">{id + 1} .</p>
+        <h2 className="text-4xl  font-medium">{title}</h2>
       </motion.div>
 
       {isHovering && (
         <motion.img
           src={Img}
           alt="Follower"
-          className="size-40 xl:size-52 rounded-lg z-10 shadow-sm  object-cover object-center"
+          className="size-40 xl:size-52 rounded-lg z-10 drop-shadow-xl   object-cover object-center"
           style={{
             position: "absolute",
             top: mouseY,
@@ -78,7 +78,7 @@ const Service2 = ({ title, Img, id, content }: ServiceProps) => {
       )}
 
       {isHovering && (
-        <div className="w-full place-items-end z-10 ">
+        <div className="w-full place-items-end  ">
           <MotionP
             className="text-sm w-[65%] text-black/70 font-medium leading-tight tracking-wide"
             initial={{ opacity: 0.3 }}

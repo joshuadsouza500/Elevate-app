@@ -8,27 +8,27 @@ const products = [
   {
     id: 0,
     title: "Logo & Branding",
-    image: "/Happylfe/happyl.jpeg",
+    image: "/shot.jpeg",
   },
   {
     id: 1,
     title: "App Development",
-    image: "/Mhomespace.jpeg",
+    image: "/landing3.jpeg",
   },
   {
     id: 2,
     title: "SEO",
-    image: "/Home/home2.jpeg",
+    image: "/landing.jpeg",
   },
   {
     id: 3,
     title: "Media Production",
-    image: "/Macy/macy2.jpeg",
+    image: "/Litlem/lit1.jpeg",
   },
   {
     id: 4,
     title: "ee Development",
-    image: "/Review2.webp",
+    image: "/Macy/macy2.jpeg",
   },
 ];
 
@@ -40,11 +40,11 @@ const ProductSlider = () => {
 
   return (
     <div ref={containerRef} className=" py-4 ">
-      <motion.div style={{ x }} className="flex gap-6 w-full">
+      <motion.div style={{ x }} className="flex gap-6 w-full ">
         {products.map((product) => (
           <div
             key={product.id}
-            className="relative h-60 w-44 md:aspect-square  flex-shrink-0 rounded-2xl overflow-hidden shadow-sm"
+            className="relative    xl:aspect-[16/12]  flex-shrink-0 rounded-2xl xl:rounded-xl overflow-hidden  drop-shadow-xl"
           >
             <Image
               src={product.image}

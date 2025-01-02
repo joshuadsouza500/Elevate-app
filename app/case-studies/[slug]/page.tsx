@@ -73,7 +73,7 @@ const CaseStudy = async ({
 
   return (
     <section className="max-w-5xl mx-auto px-3 md:px-6 xl:max-w-6xl 2xl:max-w-7xl  bg-background">
-      <div className="max-w-6xl  mx-auto pt-10 pb-10">
+      <div className="max-w-6xl  mx-auto pt-4 pb-10 xl:pt-8">
         <h1 className="text-3xl font-mono md:text-4xl xl:text-5xl font-semibold text-gray-800">
           {work.company}
         </h1>
@@ -102,7 +102,7 @@ const CaseStudy = async ({
               <ul className=" text-gray-600 flex items-ceneter gap-x-2">
                 {work.services.map((service, index) => (
                   <li
-                    className="w-auto px-3 py-[2px] capitalize bg-background text-background2 rounded-2xl font-medium"
+                    className="w-auto px-3 py-[2px] capitalize bg-Purple/5 text-background2 rounded-2xl font-medium"
                     key={index}
                   >
                     {service}

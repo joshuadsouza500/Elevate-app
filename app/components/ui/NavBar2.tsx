@@ -23,7 +23,7 @@ const NavBar2 = () => {
     }
   });
 
-  const Width = useTransform(scrollY, [0, 100], ["100%", "75%"]);
+  const Width = useTransform(scrollY, [0, 100], ["100%", "65%"]);
   const BgColour = useTransform(
     scrollY,
     [0, 100],
@@ -31,7 +31,7 @@ const NavBar2 = () => {
   );
   return (
     <MotionNav
-      className=" md:px-6 flex    p-4 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-4 items-center max-w-7xl "
+      className=" md:px-6 flex    p-4 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-4 items-center max-w-7xl 2xl:max-w-8xl "
       variants={{
         hidden: {
           y: -100,
