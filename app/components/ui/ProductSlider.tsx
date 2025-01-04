@@ -36,7 +36,7 @@ const ProductSlider = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
 
-  const x = useTransform(scrollY, [150, 1000], [-100, -250]);
+  const x = useTransform(scrollY, [150, 1000], [-100, -200]);
 
   return (
     <div ref={containerRef} className=" py-4 ">

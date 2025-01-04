@@ -280,7 +280,7 @@ const Footer2 = () => {
         {/* Social Links */}
 
         <div
-          className="bg-white flex items-center  justify-center h-10 md:h-12 w-32 md:w-40 rounded-tl-2xl absolute bottom-0 right-0
+          className="bg-background flex items-center  justify-center h-10 md:h-12 w-32 md:w-40 rounded-tl-2xl absolute bottom-0 right-0
             "
         >
           <div className="flex space-x-2 md:space-x-4 pt-2 ">

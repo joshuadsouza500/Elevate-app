@@ -23,7 +23,7 @@ const NavBar2 = () => {
     }
   });
 
-  const Width = useTransform(scrollY, [0, 100], ["100%", "65%"]);
+  const Width = useTransform(scrollY, [0, 100], ["100%", "70%"]);
   const BgColour = useTransform(
     scrollY,
     [0, 100],
@@ -98,7 +98,7 @@ const NavBar2 = () => {
       </div>
 
       <nav className="w-full hidden md:flex justify-between items-center   ">
-        <ul className="flex flex-row justify-around gap-4 pr-8 mr-2  text-lg font-medium text-background2 ">
+        <ul className="flex flex-row justify-around gap-4 pr-8 2xl:pr-12 mr-2  text-lg font-medium text-background2 ">
           <li>
             <Link
               href="#Home"
