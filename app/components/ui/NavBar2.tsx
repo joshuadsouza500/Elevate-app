@@ -92,9 +92,12 @@ const NavBar2 = () => {
         </div>
       </div>
       <div className="flex  md:w-[55%]">
-        <h4 className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight">
+        <Link
+          href="/"
+          className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight"
+        >
           Elevate<span className="text-primary">.</span>
-        </h4>
+        </Link>
       </div>
 
       <nav className="w-full hidden md:flex justify-between items-center   ">
