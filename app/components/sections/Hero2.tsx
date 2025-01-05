@@ -13,7 +13,7 @@ function Hero2() {
       id="Home"
       className="md:bg-radial-gradient-custom  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1  md:bg-opacity-10  rounded-2xl max-md:px-2 overflow-hidden"
     >
-      <div className="w-full   h-[60%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md:bg-[url('/Blob2.svg')] ">
+      <div className="w-full   h-[60%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md: ">
         <h1 className=" text-stone-950 leading-[1.2] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  xl:text-6xl xl:leading-[1.1]  ">
           Elevate your brand,
           <br className="md:block hidden 2xl:block" />{" "}
