@@ -9,6 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useMediaQuery } from "react-responsive";
 
 const NavBar2 = () => {
   const { scrollY } = useScroll();
@@ -22,8 +23,12 @@ const NavBar2 = () => {
       setHidden(false);
     }
   });
-
-  const Width = useTransform(scrollY, [0, 100], ["100%", "70%"]);
+  const is2xl = useMediaQuery({ query: "(min-width: 1536px)" });
+  const Width = useTransform(
+    scrollY,
+    [0, 100],
+    ["100%", is2xl ? "40%" : "70%"]
+  );
   const BgColour = useTransform(
     scrollY,
     [0, 100],

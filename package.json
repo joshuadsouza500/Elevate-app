@@ -10,13 +10,14 @@
     "generate-sitemap": "sitemap-generator -u https://elevate-app-bh.vercel.app -f /sitemap.xml"
   },
   "dependencies": {
-    "lenis": "^1.1.18",
     "clsx": "^2.1.1",
     "framer-motion": "^11.0.18",
+    "lenis": "^1.1.18",
     "lucide-react": "^0.469.0",
     "next": "14.1.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-responsive": "^10.0.0",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
