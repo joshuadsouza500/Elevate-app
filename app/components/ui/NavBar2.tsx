@@ -101,7 +101,7 @@ const NavBar2 = () => {
       </div>
 
       <nav className="w-full hidden md:flex justify-between items-center   ">
-        <ul className="flex flex-row justify-around gap-4 pr-8 2xl:pr-12 mr-2  text-lg font-medium text-background2 ">
+        <ul className="flex flex-row justify-around gap-4 pr-10 2xl:pr-12 mr-2  text-lg font-medium text-background2 ">
           <li>
             <Link
               href="#Home"

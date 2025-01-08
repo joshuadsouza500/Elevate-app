@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { MotionDiv } from "../MotionDiv";
+import { MotionDiv, MotionP } from "../MotionDiv";
 
 const Images = [
   { id: 1, img: "/Logos/arab.svg" },
@@ -13,9 +13,20 @@ const Slider = () => {
   return (
     <section className="flex flex-col items-center pt-10 pb-3 md:py-10  ">
       <div>
-        <p className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70 text-center w-[70%] mx-auto">
-          Over the years we have collaborated with some amazing brands
-        </p>
+        <span className="inline-block overflow-hidden text-center  ">
+          <MotionP
+            initial={{ y: "100%", opacity: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.15,
+              duration: 0.4,
+            }}
+            viewport={{ once: true }}
+            className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70  w-[70%] mx-auto"
+          >
+            Over the years we have collaborated with some amazing brands
+          </MotionP>
+        </span>
         <p className=" text-Purple max-md:text-sm font-medium hidden">
           {" "}
           * Who {"we've"} worked with

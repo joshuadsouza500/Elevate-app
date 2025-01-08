@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { MotionDiv, Motionh1, MotionP } from "../MotionDiv";
+import { MotionB, MotionDiv, Motionh1, MotionP } from "../MotionDiv";
 import NavBar from "../Navbar";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
@@ -14,25 +14,56 @@ function Hero2() {
       className="md:bg-radial-gradient-custom  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1  md:bg-opacity-10  rounded-2xl max-md:px-2 overflow-hidden"
     >
       <div className="w-full   h-[60%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md: ">
-        <h1 className=" text-stone-950 leading-[1.2] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  xl:text-6xl xl:leading-[1.1]  ">
-          Elevate your brand,
-          <br className="md:block hidden 2xl:block" />{" "}
-          <span className="text-indigo-600 ">captivate</span> your audience!
-        </h1>
+        <span className="inline-block overflow-hidden">
+          <Motionh1
+            className=" text-stone-950 leading-[1.2] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  xl:text-6xl xl:leading-[1.1]  "
+            initial={{ y: "100%", opacity: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.4,
+            }}
+            viewport={{ once: true }}
+          >
+            Elevate your brand,
+            <br className="md:block hidden 2xl:block" />{" "}
+            <span className="text-indigo-600 ">captivate</span> your audience!
+          </Motionh1>
+        </span>
+        <span className="inline-block overflow-hidden  pl-1 w-4/6 text-xs sm:text-sm mt-2 mb-4  sm:mt-4 lg:w-4/5 xl:w-3/6 text-opacity-80 text-stone-950 lg:mt-4 lg:mb-7">
+          <MotionP
+            initial={{ y: "100%", opacity: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.15,
+              duration: 0.4,
+            }}
+            viewport={{ once: true }}
+            className=" hidden lg:block   capitalize  lg:leading-relaxed"
+          >
+            Unlock the Full Potential of Your Brand through Tailored Strategies
+            that Engage and Inspire.
+          </MotionP>
 
-        <p className=" hidden lg:block pl-1 lg:w-4/5 xl:w-3/6 text-opacity-80 text-stone-950 mt-4 mb-7  capitalize  lg:leading-relaxed">
-          Unlock the Full Potential of Your Brand through Tailored Strategies
-          that Engage and Inspire.
-        </p>
-        <p className="w-4/6 text-xs sm:text-sm mt-2 mb-4  sm:mt-4 text-opacity-80 text-slate-950 lg:hidden">
-          Unlock Your {"Brand's"} Potential with Engaging Strategies
-        </p>
-        <button className="group lg:w-36 border-zinc-800 text-background rounded-full text-sm px-3 py-2  bg-gradient-to-br shadow-sm from-zinc-900 to-zinc-700 hover:border-white">
+          <p className=" text-opacity-80 text-slate-950 lg:hidden">
+            Unlock Your {"Brand's"} Potential with Engaging Strategies
+          </p>
+        </span>
+        <MotionB
+          initial={{ y: "5%", opacity: 0.1 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.15,
+            duration: 0.45,
+          }}
+          viewport={{ once: true }}
+          className="group lg:w-[132px] border-zinc-800 text-background rounded-full text-sm px-3 py-2  bg-gradient-to-br shadow-sm from-zinc-900 to-zinc-700 hover:border-white"
+        >
           <Link href="/contact" className="  flex items-center">
             Contact me
             <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
           </Link>
-        </button>
+        </MotionB>
       </div>
       <ProductSlider />
     </section>
@@ -41,25 +72,23 @@ function Hero2() {
 
 export default Hero2;
 {
-  /**<div className="w-28 h-16 rounded-tl-xl bg-background bottom-0 right-0 absolute pl-2">
-          <h6 className="text-sm stat-value">
-            200+ <br /> Projects completed
-          </h6>{" "}
-        </div> */
+  /**
+  <span className="inline-block overflow-hidden">
+  <Motionh1
+    className={cn("w-full", className)}
+    initial={{ y: "100%", opacity: 0.4 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{
+      delay: delay || 0.1,
+      duration: duration || 0.2,
+    }}
+    viewport={{ once: true }}
+  >
+    {text}
+  </Motionh1>
+</span> **/
 }
 
-{
-  /**'use client'
-
-import { Button } from "@/components/ui/button"
-import { Sparkles, Star, Palette, Shapes, Lightbulb, Rocket } from 'lucide-react'
-import { motion } from "framer-motion"
-
-export default function Hero() {
-  return (
-    <section className="min-h-[80vh] relative overflow-hidden flex items-center justify-center px-4">
-      {/* Background gradient */
-}
 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-white to-white" />;
 
 /* Floating icons 
