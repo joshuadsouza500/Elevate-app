@@ -91,49 +91,51 @@ const NavBar2 = () => {
           </div>
         </div>
       </div>
-      <div className="flex  md:w-[55%]">
-        <Link
-          href="/"
-          className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight"
-        >
-          Elevate<span className="text-primary">.</span>
-        </Link>
-      </div>
+      <div className="flex justify-between items-center w-full">
+        <div className="flex   ">
+          <Link
+            href="/"
+            className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight"
+          >
+            Elevate<span className="text-primary">.</span>
+          </Link>
+        </div>
 
-      <nav className="w-full hidden md:flex justify-between items-center   ">
-        <ul className="flex flex-row justify-around gap-4 pr-10 2xl:pr-12 mr-2  text-lg font-medium text-background2 ">
-          <li>
-            <Link
-              href="#Home"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#About"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#Services"
-              className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
-            >
-              Services
-            </Link>
-          </li>
-        </ul>
-        <button className="group lg:w-36 border-zinc-800 text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-Purple to-zinc-500 hover:border-white">
+        <nav className=" hidden md:flex justify-between items-center  ">
+          <ul className="flex flex-row justify-around gap-4  mr-2  text-lg font-medium text-background2 ">
+            <li>
+              <Link
+                href="#Home"
+                className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#About"
+                className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#Services"
+                className="hover:border-b hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+              >
+                Services
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <button className="hidden md:block group  border-zinc-800 text-sm text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-zinc-900 to-zinc-500 hover:border-white">
           <Link href="/contact" className="  flex items-center">
             Contact me
             <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
           </Link>
         </button>
-      </nav>
+      </div>
     </MotionNav>
   );
 };
