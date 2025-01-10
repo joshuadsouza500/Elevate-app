@@ -18,17 +18,17 @@ const products = [
   {
     id: 2,
     title: "SEO",
-    image: "/landing.jpeg",
+    image: "/Litlem/lit1.jpeg",
   },
   {
     id: 3,
     title: "Media Production",
-    image: "/Litlem/lit1.jpeg",
+    image: "/Macy/macy1.jpeg ",
   },
   {
     id: 4,
-    title: "ee Development",
-    image: "/Macy/macy2.jpeg",
+    title: "Website Development",
+    image: "/hero4.jpeg ",
   },
 ];
 

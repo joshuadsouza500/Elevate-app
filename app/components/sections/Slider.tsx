@@ -19,7 +19,7 @@ const Slider = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{
               delay: 0.15,
-              duration: 0.4,
+              duration: 0.6,
             }}
             viewport={{ once: true }}
             className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70  w-[70%] mx-auto"

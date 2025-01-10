@@ -1,5 +1,5 @@
 import React from "react";
-import { MotionDiv, Motionh1 } from "../MotionDiv";
+import { MotionDiv, Motionh1, MotionP } from "../MotionDiv";
 import { title } from "process";
 import Service2 from "../ui/Service2";
 import ServiceSmall from "../ui/ServiceSmall";
@@ -48,10 +48,21 @@ function Services() {
             <span className="size-[5px] rounded-full bg-primary animate-pulse"></span>
             <p className=" text-Purple ">What we do</p>
           </div>
-          <p className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]">
-            {"Here's"} how we can help your brand shine and connect with your
-            audience.
-          </p>
+          <span className="inline-block overflow-hidden  ">
+            <MotionP
+              initial={{ y: "100%", opacity: 0.4 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.1,
+                duration: 0.6,
+              }}
+              viewport={{ once: true }}
+              className="mx-auto text-background2/80 max-md:text-xs font-medium w-[70%]"
+            >
+              {"Here's"} how we can help your brand shine and connect with your
+              audience.
+            </MotionP>
+          </span>
         </div>
         <ul className="md:hidden w-full h-full  cursor-pointer px-1">
           {service.map((service) => (
