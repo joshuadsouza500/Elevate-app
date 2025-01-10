@@ -14,7 +14,7 @@ const config: Config = {
         Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        background: "#FEFEFA", //\\  Change in navbar when bgcolour is chaged later
+        background: "#FEFEFA", //\\ #FAFAF5,  Change in navbar when bgcolour is chaged later
         background2: "#100E0E",
         Purple: "#7163BA",
       },

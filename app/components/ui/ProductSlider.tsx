@@ -13,12 +13,12 @@ const products = [
   {
     id: 1,
     title: "App Development",
-    image: "/landing3.jpeg",
+    image: "/Litlem/lit1.jpeg",
   },
   {
     id: 2,
     title: "SEO",
-    image: "/Litlem/lit1.jpeg",
+    image: "/landing3.jpeg ",
   },
   {
     id: 3,
