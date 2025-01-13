@@ -18,7 +18,7 @@ const products = [
   {
     id: 2,
     title: "SEO",
-    image: "/landing3.jpeg ",
+    image: "/landing3.jpeg",
   },
   {
     id: 3,
