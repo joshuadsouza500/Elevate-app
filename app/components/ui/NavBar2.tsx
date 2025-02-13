@@ -36,7 +36,7 @@ const NavBar2 = () => {
   );
   return (
     <MotionNav
-      className=" md:px-6 flex    p-4 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-4 items-center max-w-7xl 2xl:max-w-8xl "
+      className=" md:px-6 flex    p-4 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-4 items-center max-w-7xl 2xl:max-w-8xl  transition-all duration-200 ease-in-out"
       variants={{
         hidden: {
           y: -100,
