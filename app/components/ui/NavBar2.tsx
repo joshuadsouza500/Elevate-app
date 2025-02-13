@@ -32,7 +32,7 @@ const NavBar2 = () => {
   const BgColour = useTransform(
     scrollY,
     [0, 100],
-    ["#FAFAF5 ", "rgba(245,245,245,0.9)"]
+    ["#fefefa ", "rgba(245,245,245,0.9)"]
   );
   return (
     <MotionNav
