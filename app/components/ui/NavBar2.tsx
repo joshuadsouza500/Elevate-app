@@ -96,7 +96,7 @@ const NavBar2 = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center w-full">
+      <div className="flex justify-between items-center w-full max-md:pl-1">
         <div className="flex   ">
           <Link
             href="/"
