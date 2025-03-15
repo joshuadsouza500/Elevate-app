@@ -107,11 +107,11 @@ const NavBar2 = () => {
         </div>
 
         <nav className=" hidden md:flex justify-between items-center  ">
-          <ul className="flex flex-row justify-around gap-4 xl:gap-6  mr-2  2xl:text-lg font-medium text-background2 ">
+          <ul className="flex flex-row justify-around gap-4 xl:gap-8  mr-2  2xl:text-lg font-medium text-gray-800 ">
             <li>
               <Link
                 href="#Home"
-                className="hover:text-indigo-600 transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:text-indigo-600 transition-all duration-300 ease-in-out   scroll-smooth"
               >
                 Home
               </Link>
@@ -119,7 +119,7 @@ const NavBar2 = () => {
             <li>
               <Link
                 href="#About"
-                className="hover:text-indigo-600 transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:text-indigo-600 transition-all duration-300 ease-in-out   scroll-smooth"
               >
                 About
               </Link>
@@ -127,9 +127,17 @@ const NavBar2 = () => {
             <li>
               <Link
                 href="#Services"
-                className="hover:text-indigo-600 transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:text-indigo-600 transition-all duration-300 ease-in-out   scroll-smooth"
               >
                 Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#Projects"
+                className="hover:text-indigo-600 transition-all duration-300 ease-in-out   scroll-smooth"
+              >
+                Projects
               </Link>
             </li>
           </ul>

@@ -40,12 +40,15 @@ const ProductSlider = () => {
 
   return (
     <div ref={containerRef} className=" py-4 ">
-      <motion.div style={{ x }} className="flex gap-6 xl:gap-8 w-full ">
+      <motion.div
+        style={{ x }}
+        className="flex gap-6 xl:gap-8 2xl:gap-10 w-full "
+      >
         {products.map((product) => (
           <>
             <div
               key={product.id}
-              className="relative lg:hidden h-52 w-44 md:h-64 md:w-52   flex-shrink-0 rounded-xl  overflow-hidden  drop-shadow-xl"
+              className="relative lg:hidden h-52 w-44 md:h-64 md:w-52  2xl:h-72 2xl:w-56   flex-shrink-0 rounded-xl  overflow-hidden  drop-shadow-xl"
             >
               <Image
                 src={product.image}
