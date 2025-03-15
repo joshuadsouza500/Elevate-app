@@ -11,9 +11,9 @@ function Hero2() {
   return (
     <section
       id="Home"
-      className="md:bg-radial-gradient-custom  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1  md:bg-opacity-10  rounded-2xl max-md:px-2 overflow-hidden relative"
+      className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-white to-white  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1  md:bg-opacity-10  rounded-2xl max-md:px-2 overflow-hidden relative"
     >
-      <div className="w-full   h-[65%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md: ">
+      <div className="w-full   h-[65%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl   relative">
         <span className="inline-block overflow-hidden">
           <Motionh1
             className=" text- stone-950 text-gray-900   md:leading-[1.1]   font-bold capitalize text-4xl leading-tight  md:text-6xl  2xl:text-7xl xl:leading-tight  "
@@ -81,7 +81,6 @@ function Hero2() {
             Learn More
           </button>
         </MotionDiv>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-100 via-white to-white" />
       </div>
       <ProductSlider />
     </section>
