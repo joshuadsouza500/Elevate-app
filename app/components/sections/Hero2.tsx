@@ -23,7 +23,7 @@ function Hero2() {
           >
             Elevate your brand,
             <br className="md:block hidden 2xl:block" />{" "}
-            <span className="text-indigo-600 ">captivate</span> your audience!
+            <span className="text-indigo-600 ">Captivate</span> your audience!
           </Motionh1>
         </span>
         <span className="inline-block overflow-hidden  pl-1 w-4/6  mt-2 mb-4  sm:mt-4 lg:w-4/5 xl:w-7/12 text-opacity-80 text-stone-950 lg:mt-4 lg:mb-8 2xl:mb-10 ">
