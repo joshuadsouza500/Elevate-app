@@ -39,7 +39,7 @@ function Services() {
   return (
     <div id="Services" className=" h-auto pt-6 xl:pt-20">
       <div className="pt-1 flex flex-col items-center ">
-        <div className="pb-12 md:pb-24  text-center space-y-2 flex items-center flex-col">
+        <div className="pb-12 md:pb-20  text-center space-y-2 flex items-center flex-col">
           <h6 className="text-Purple max-md:text-sm font-medium hidden">
             {" "}
             * What we do

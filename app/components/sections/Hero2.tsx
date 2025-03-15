@@ -1,19 +1,15 @@
-import Link from "next/link";
 import React from "react";
 import { MotionB, MotionDiv, Motionh1, MotionP } from "../MotionDiv";
-import NavBar from "../Navbar";
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
-import path from "path";
 import ProductSlider from "../ui/ProductSlider";
 
 function Hero2() {
   return (
     <section
       id="Home"
-      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-200 via-white to-white  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1    rounded-2xl max-md:px-2 overflow-hidden relative"
+      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-200 via-white to-white  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1 md:bg-opacity-50   rounded-2xl max-md:px-2 overflow-hidden relative"
     >
-      <div className="w-full   h-[65%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 xl:pb-24 2xl:pb-32  bg- opacity-30 bg-center bg-no-repeat    rounded-2xl   relative">
+      <div className="w-full   h-[65%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 xl:pb-24 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl   relative">
         <span className="inline-block overflow-hidden">
           <Motionh1
             className=" text- stone-950 text-gray-900   md:leading-[1.1]   font-bold capitalize text-4xl leading-tight  md:text-6xl  2xl:text-7xl xl:leading-tight  "

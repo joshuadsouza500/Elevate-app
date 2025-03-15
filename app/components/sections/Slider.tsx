@@ -22,7 +22,7 @@ const Slider = () => {
               duration: 0.6,
             }}
             viewport={{ once: true }}
-            className="text-xs md:text-sm 2xl:text-base 2xl:leading-tight  font-medium text-background2/70  w-[70%] mx-auto"
+            className="max-md:text-xs  2xl:leading-tight  font-medium text-gray-600  w-[70%] mx-auto"
           >
             Over the years we have collaborated with some amazing brands
           </MotionP>
