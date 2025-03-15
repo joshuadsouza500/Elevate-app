@@ -174,7 +174,7 @@ const Footer2 = () => {
             className="text-center max-w-[95%] sm:max-w-[90%] xl:max-w-5xl py-4 xl:py-10 mx-auto space-y-4 bg-background w-full rounded-2xl flex flex-col place-items-center"
             id="#CTA"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent capitalize">
               Ready to elevate <br /> your brand?
             </h2>
             <p className="max-md:text-sm text-zinc-600 text-lg">
