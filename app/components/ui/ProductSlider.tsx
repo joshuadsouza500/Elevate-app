@@ -23,12 +23,12 @@ const products = [
   {
     id: 3,
     title: "Media Production",
-    image: "/Macy/macy1.jpeg ",
+    image: "/Macy/macy1.jpeg",
   },
   {
     id: 4,
     title: "Website Development",
-    image: "/hero4.jpeg ",
+    image: "/hero4.jpeg",
   },
 ];
 

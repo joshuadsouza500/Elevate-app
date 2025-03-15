@@ -16,7 +16,7 @@ function Hero2() {
       <div className="w-full   h-[60%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 2xl:pb-32  bg-opacity-30 bg-center bg-no-repeat    rounded-2xl max-md: ">
         <span className="inline-block overflow-hidden">
           <Motionh1
-            className=" text-stone-950 leading-[1.2] md:leading-[1.1]   font-semibold capitalize text-4xl   md:text-5xl  xl:text-6xl xl:leading-[1.1]  "
+            className=" text-stone-950  md:leading-[1.1]   font-bold capitalize text-4xl leading-tight  md:text-6xl  xl:text-7xl xl:leading-tight  "
             initial={{ y: "100%", opacity: 0.4 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{
@@ -30,7 +30,7 @@ function Hero2() {
             <span className="text-indigo-600 ">captivate</span> your audience!
           </Motionh1>
         </span>
-        <span className="inline-block overflow-hidden  pl-1 w-4/6 text-xs sm:text-sm mt-2 mb-4  sm:mt-4 lg:w-4/5 xl:w-3/6 text-opacity-80 text-stone-950 lg:mt-4 lg:mb-7">
+        <span className="inline-block overflow-hidden  pl-1 w-4/6  mt-2 mb-4  sm:mt-4 lg:w-4/5 xl:w-3/6 text-opacity-80 text-stone-950 lg:mt-4 lg:mb-7">
           <MotionP
             initial={{ y: "100%", opacity: 0.4 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -39,13 +39,13 @@ function Hero2() {
               duration: 0.4,
             }}
             viewport={{ once: true }}
-            className=" hidden lg:block   capitalize  lg:leading-relaxed"
+            className=" hidden lg:block   capitalize md:text-xl  text-gray-600 lg:leading-relaxed"
           >
             Unlock the Full Potential of Your Brand through Tailored Strategies
             that Engage and Inspire.
           </MotionP>
 
-          <p className=" text-opacity-80 text-slate-950 lg:hidden">
+          <p className="text-xs sm:text-sm text-opacity-80 text-slate-950 lg:hidden">
             Unlock Your {"Brand's"} Potential with Engaging Strategies
           </p>
         </span>
