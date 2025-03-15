@@ -73,7 +73,7 @@ function Hero2() {
           <button className="w-full sm:w-auto px-8 py-3 text-base font-medium text-white bg-indigo-600 rounded-md shadow-md hover-scale button-shadow">
             Contact Us
           </button>
-          <button className="hidden md:block w-full  px-8 py-3 text-base font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50 transition-colors duration-300">
+          <button className="w-full sm:w-auto w-full  px-8 py-3 text-base font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50 transition-colors duration-300">
             Learn More
           </button>
         </MotionDiv>
