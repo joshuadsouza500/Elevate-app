@@ -7,7 +7,7 @@ function Hero2() {
   return (
     <section
       id="Home"
-      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-100 via-white to-white  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1 md:bg-opacity-50   rounded-2xl max-md:px-2 overflow-hidden relative"
+      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-100 via-white to-white  flex flex-col  justify-start items-start  h-auto pb-2 md:pb-8 bg-cover   bg-center bg-no-repeat mx-1 md:bg-opacity-50   rounded-2xl max-md:px-2 overflow-hidden relative"
     >
       <div className="w-full   h-[65%] 2xl:h-[75%] py-20 flex flex-col text-center items-center bg-cover justify-center md:pt-32  2xl:pt-40   md:pb-16 xl:pb-24 2xl:pb-32   bg-center bg-no-repeat bg-opacity-30   rounded-2xl   relative">
         <span className="inline-block overflow-hidden">
@@ -70,10 +70,10 @@ function Hero2() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 "
         >
-          <button className="w-full sm:w-auto px-8 py-3 text-base font-medium text-white bg-indigo-600 rounded-md shadow-md hover-scale button-shadow">
+          <button className="w-full sm:w-auto px-4 md:px-8 py-2 md:py-3 text-base font-medium text-white bg-indigo-600 rounded-md shadow-md hover-scale button-shadow">
             Contact Us
           </button>
-          <button className="w-full sm:w-auto px-8 py-3 text-base font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50 transition-colors duration-300">
+          <button className="hidden md:block w-full  px-8 py-3 text-base font-medium text-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-50 transition-colors duration-300">
             Learn More
           </button>
         </MotionDiv>
