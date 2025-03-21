@@ -41,9 +41,17 @@ function Hero2() {
             that Engage and Inspire.
           </MotionP>
 
-          <p className="text-xs sm:text-sm text-opacity-80 text-slate-950 lg:hidden">
+          <MotionP
+            initial={{ y: "100%", opacity: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.15,
+              duration: 0.4,
+            }}
+            viewport={{ once: true }}
+            className="text-xs sm:text-sm text-opacity-80 text-slate-950 lg:hidden">
             Unlock Your {"Brand's"} Potential with Engaging Strategies
-          </p>
+          </MotionP>
         </span>
         {/** <MotionB
           initial={{ y: "5%", opacity: 0.1 }}
