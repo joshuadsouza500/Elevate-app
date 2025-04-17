@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="grid gap-6 md:gap-12">
           {/* Main CTA Section */}
           <div
-            className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background w-full rounded-2xl flex flex-col place-items-center"
+            className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background dark:bg-background w-full rounded-2xl flex flex-col place-items-center"
             id="#CTA"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent">
               Ready to elevate <br /> your brand?
             </h2>
-            <p className="max-md:text-sm text-zinc-600 text-lg">
+            <p className="max-md:text-sm text-zinc-600  text-lg">
               {` Let's turn your vision into reality.`}
             </p>
             <button className="mt-4 group flex items-center border-zinc-800 text-background rounded-full px-3 py-2  bg-gradient-to-br shadow-sm from-zinc-950 to-zinc-700 hover:border-white">
