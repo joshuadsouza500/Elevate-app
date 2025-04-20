@@ -45,7 +45,7 @@ export default function WorksCard({
         <div className=" space-y-1 py-2   pl-1 ">
           <div className="flex justify-start gap-x-2 items-center">
             <span className="text-sm text-background2/60">{year}</span>
-            <span className="size-1 bg-black rounded-full"></span>{" "}
+            <span className="size-1 bg-black dark:bg-white rounded-full"></span>{" "}
             <p className="font-mono">{company}</p>
           </div>
           <h5 className="text-xl md:text-2xl  capitalize">{title}</h5>
