@@ -7,7 +7,7 @@ function Reviews() {
     <div id="Reviews">
       <div>
         <Motionh1
-          className="font-Poppins text-stone-950 text-opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-4 md:pt-12 lg:pt-20 lg:pb-20 pb-6  ml-8 md:ml-20 lg:ml-32 sm:w-3/4  lg:w-3/5 leading-tight md:leading-relaxed pr-2"
+          className="font-Poppins text-stone-950 dark:text-stone-300 text-opacity-90 font-bold text-5xl sm:text-6xl lg:text-7xl pt-4 md:pt-12 lg:pt-20 lg:pb-20 pb-6  ml-8 md:ml-20 lg:ml-32 sm:w-3/4  lg:w-3/5 leading-tight md:leading-relaxed pr-2"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -24,7 +24,7 @@ function Reviews() {
       </div>
       <div className="flex flex-col justify-around items-center gap-2 h-dvh  relative">
         <MotionDiv
-          className="bg-white shadow-xl w-[80%] rounded-xl sticky top-[25%] mt-14"
+          className="bg-white dark:bg-stone-800 shadow-xl w-[80%] rounded-xl sticky top-[25%] mt-14"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -36,7 +36,7 @@ function Reviews() {
             opacity: { duration: 0.6 },
           }}
         >
-          <p className="hidden md:block text-opacity-90 font-semibold text-sm w-10/12 lg:w-9/12 my-4 p-5 md:ml-6">
+          <p className="hidden md:block text-opacity-90 font-semibold text-sm w-10/12 lg:w-9/12 my-4 p-5 md:ml-6 dark:text-gray-200">
             I had the pleasure of working with Elevate on a recent marketing
             campaign and I was thoroughly impressed with their level of
             creativity, professionalism, and attention to detail.The team at
@@ -45,7 +45,7 @@ function Reviews() {
             highly recommend Elevate to any business looking to take their
             marketing efforts to the next level.
           </p>
-          <p className="md:hidden text-opacity-95 font-medium text-sm leading-tight  my-4 p-5">
+          <p className="md:hidden text-opacity-95 font-medium text-sm leading-tight  my-4 p-5 dark:text-gray-200">
             The team at Elevate went above and beyond to ensure our campaign was
             a success, resulting in increased brand awareness and customer
             engagement. I highly recommend Elevate to any business looking to
@@ -67,8 +67,8 @@ function Reviews() {
           </div>
         </MotionDiv>
 
-        <MotionDiv className="bg-white shadow-xl w-[80%] rounded-xl sticky top-20 md:top-0 ">
-          <p className="hidden md:block opacity-80 font-semibold text-sm w-10/12 lg:w-9/12 my-4 p-5 md:ml-6">
+        <MotionDiv className="bg-white dark:bg-stone-800 shadow-xl w-[80%] rounded-xl sticky top-20 md:top-0 ">
+          <p className="hidden md:block opacity-80 font-semibold text-sm w-10/12 lg:w-9/12 my-4 p-5 md:ml-6 dark:text-gray-200">
             I had the pleasure of working with Elevate on a recent marketing
             campaign and I was thoroughly impressed with their level of
             creativity, professionalism, and attention to detail.The team at
