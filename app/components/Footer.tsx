@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid gap-6 md:gap-12">
           {/* Main CTA Section */}
           <div
-            className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background dark:bg-red-600 w-full rounded-2xl flex flex-col place-items-center"
+            className="text-center max-xl:max-w-[90%] xl:max-w-5xl py-6 xl:py-10 mx-auto space-y-4 bg-background dark:bg-backgroundb w-full rounded-2xl flex flex-col place-items-center"
             id="#CTA"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-br from-black to-zinc-600 bg-clip-text text-transparent">
